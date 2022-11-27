@@ -112,6 +112,14 @@
             </v-col>
           </v-row>
 
+<!--          game history-->
+<!--          {{gameStates}}-->
+          <v-combobox
+            solo hide-details multiple
+            readonly
+            label="excludedCountries"
+            :value="excludedCountries"
+          />
           <!--game states-->
           <v-col cols="12">
             {{ lastGameState }}
@@ -174,7 +182,6 @@
 <script>
 const CountryHeaders = ["Europe", "Asia", "Africa", 'North America', 'South America', "Oceania"];
 import mysteryCountryFormat from "~/dev/mysteryCountryFormat.json"
-import uniqBy from "lodash.uniqby"
 import uniq from "lodash.uniq"
 
 export default {
@@ -197,7 +204,20 @@ export default {
     }
   },
   methods: {
+    clearFilters() {
+      this.tableSearch = "";
+      this.continentFilter = "";
+      this.firstLetterFilter = "";
+      this.lastLetterFilter = "";
+      this.continentFilterExclude = [];//forget if this works or not
+      this.firstLetterFilterExclude = [];
+      this.lastLetterFilterExclude = [];
 
+
+
+      this.lastGameState = {};
+      this.gameStates = [];//todo for undo
+    },
     tableFilter(oData){
       const that = this;
       const {country, continent, firstLetter, lastLetter} = oData;
@@ -235,6 +255,15 @@ export default {
         }
       }
 
+      //country
+      if (this.excludedCountries.length > 0) {
+        for (let i = 0; i < this.excludedCountries.length; i++) {
+          const rowExclude = this.excludedCountries[i];
+          toShow = toShow && !rowExclude.includes(country)
+          if (!toShow) return toShow;
+        }
+      }
+
       return toShow;
     },
     /* sets last gamestate and clipboard*/
@@ -242,30 +271,18 @@ export default {
       // console.log(item);
       const {continent, country, firstLetter, lastLetter} = item;
       /* push to state and filter */
-      this.gameStates.push(item);
+      // this.gameStates.push(item); //shouldnt be done here... but in gameStateLookupItems
       /* copy to clipboard */
       this.lastGameState = {...item}
       await navigator.clipboard.writeText(country);
 
     },
-    /* game state handlers */
-    gameStateHandlerEvent() {
-      //todo might not need?
-    },
-    clearFilters() {
-      this.tableSearch = "";
-      this.continentFilter = "";
-      this.firstLetterFilter = "";
-      this.lastLetterFilter = "";
-      this.continentFilterExclude = [];//forget if this works or not
-      this.firstLetterFilterExclude = [];
-      this.lastLetterFilterExclude = [];
 
-      this.lastGameState = {};
-      this.gameStates = [];//todo for undo
-    }
   },
   computed: {
+    excludedCountries(){
+      return this.gameStates.map( val => val.country)
+    },
     /* copied and pasted large countries */
     largeCountries(){
       return [
@@ -355,6 +372,13 @@ export default {
 
       }
 
+      function gameStatesHandlerAtEnd(){
+
+        that.gameStates.push(that.lastGameState);
+        that.lastGameState = {};
+
+      }
+
 
       const colorLookup = [
         //fl
@@ -366,7 +390,8 @@ export default {
             that.continentFilterExclude = uniq(that.continentFilterExclude);
             that.lastLetterFilterExclude.push(that.lastGameState.lastLetter);
             that.lastLetterFilterExclude = uniq(that.lastLetterFilterExclude);
-            that.lastGameState = {};
+
+            gameStatesHandlerAtEnd()
           },
           label: "FL",
         },
@@ -380,8 +405,7 @@ export default {
 
             that.firstLetterFilterExclude.push(that.lastGameState.firstLetter);
             that.firstLetterFilterExclude = uniq(that.firstLetterFilterExclude);
-            that.lastGameState = {};
-          },
+            gameStatesHandlerAtEnd()          },
           label: "LL",
         },
         //continent
@@ -393,8 +417,7 @@ export default {
             that.firstLetterFilterExclude = uniq(that.firstLetterFilterExclude);
             that.lastLetterFilterExclude.push(that.lastGameState.lastLetter);
             that.lastLetterFilterExclude = uniq(that.lastLetterFilterExclude);
-            that.lastGameState = {};
-          },
+            gameStatesHandlerAtEnd()          },
           label: "CO",
         },
         //landmass (LA)
@@ -412,8 +435,7 @@ export default {
           handler: function () {
             fl();
             ll();
-            that.lastGameState = {};
-          },
+            gameStatesHandlerAtEnd()          },
           label: "FL LL",
         },
         //fl + continent
@@ -422,8 +444,7 @@ export default {
           handler: function () {
             fl();
             co();
-            that.lastGameState = {};
-          },
+            gameStatesHandlerAtEnd()          },
           label: "FL CO",
         },
         // fl * landmass
@@ -432,8 +453,7 @@ export default {
           handler: function () {
             fl();
             la_lm();
-            that.lastGameState = {};
-          },
+            gameStatesHandlerAtEnd()          },
           label: "FL LM",
         },
         //ll and continent
@@ -442,7 +462,7 @@ export default {
           handler: function () {
             ll();
             co();
-            that.lastGameState = {};
+            gameStatesHandlerAtEnd()
           },
           label: "LL CO",
         },
@@ -452,7 +472,7 @@ export default {
           handler: function () {
             ll();
             la_lm();
-            that.lastGameState = {};
+            gameStatesHandlerAtEnd()
           },
           label: "LL LM",
         },
@@ -463,7 +483,7 @@ export default {
             fl();
             ll();
             co();
-            that.lastGameState = {};
+            gameStatesHandlerAtEnd()
           },
           label: "FL LL CO",
         },
@@ -474,7 +494,7 @@ export default {
             fl();
             ll();
             la_lm();
-            that.lastGameState = {};
+            gameStatesHandlerAtEnd()
           },
           label: "FL LL LM",
         },
@@ -483,7 +503,7 @@ export default {
           color: "rgb(255, 255, 255)",
           handler: function () {
             none();
-            that.lastGameState = {};
+            gameStatesHandlerAtEnd()
           },
           label: "NONE",
         },
