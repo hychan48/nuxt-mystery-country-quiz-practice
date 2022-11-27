@@ -120,6 +120,7 @@
 
             <v-btn
               v-for="item in gameStateLookupItems"
+              :key="item.label"
               :color="item.color"
               @click="item.handler"
               :disabled="!lastGameState.country"
@@ -130,7 +131,21 @@
 
           </v-col>
 
+<!--          initial country table for easy start-->
+          <v-col cols="12">
+<!--            can mayve hide this with some state-->
+            <v-btn
+              v-for="countryItem in largeCountries"
+              :key="countryItem.country"
+              @click="countryBtnEvent(countryItem)"
+              v-text="countryItem.country"
+              :tooltip="countryItem.continent"
+            >
+
+            </v-btn>
+          </v-col>
           <!--V data table-->
+
           <v-data-table
             :headers="tableHeaders"
             :items="tableItems"
@@ -182,6 +197,46 @@ export default {
     }
   },
   methods: {
+
+    tableFilter(oData){
+      const that = this;
+      const {country, continent, firstLetter, lastLetter} = oData;
+      let toShow = true;
+      //lazy chain
+      if (that.continentFilter) {
+        toShow = toShow && continent.toLowerCase().includes(that.continentFilter.toLowerCase())
+      }
+      if (that.firstLetterFilter) {
+        toShow = toShow && firstLetter.includes(that.firstLetterFilter)
+      }
+      if (that.lastLetterFilter) {
+        toShow = toShow && lastLetter.includes(that.lastLetterFilter)
+      }
+
+      if (this.continentFilterExclude.length > 0) {
+        for (let i = 0; i < this.continentFilterExclude.length; i++) {
+          const rowExclude = this.continentFilterExclude[i];
+          toShow = toShow && !rowExclude.includes(continent)
+          if (!toShow) return toShow;
+        }
+      }
+      if (this.firstLetterFilterExclude.length > 0) {
+        for (let i = 0; i < this.firstLetterFilterExclude.length; i++) {
+          const rowExclude = this.firstLetterFilterExclude[i];
+          toShow = toShow && !rowExclude.includes(firstLetter)
+          if (!toShow) return toShow;
+        }
+      }
+      if (this.lastLetterFilterExclude.length > 0) {
+        for (let i = 0; i < this.lastLetterFilterExclude.length; i++) {
+          const rowExclude = this.lastLetterFilterExclude[i];
+          toShow = toShow && !rowExclude.includes(lastLetter)
+          if (!toShow) return toShow;
+        }
+      }
+
+      return toShow;
+    },
     /* sets last gamestate and clipboard*/
     async countryBtnEvent(item) {
       // console.log(item);
@@ -211,6 +266,48 @@ export default {
     }
   },
   computed: {
+    /* copied and pasted large countries */
+    largeCountries(){
+      return [
+        {
+          "country": "Canada",
+          "continent": "North America",
+          "firstLetter": "c",
+          "lastLetter": "a"
+        },
+        {
+          "country": "China",
+          "continent": "Asia",
+          "firstLetter": "c",
+          "lastLetter": "a"
+        },
+        {
+          "country": "Brazil",
+          "continent": "South America",
+          "firstLetter": "b",
+          "lastLetter": "l"
+        },
+        {
+          "country": "Australia",
+          "continent": "Oceania",
+          "firstLetter": "a",
+          "lastLetter": "a"
+        },
+        {
+          "country": "Egypt",
+          "continent": "Africa",
+          "firstLetter": "e",
+          "lastLetter": "t"
+        },
+        {
+          "country": "France",
+          "continent": "Europe",
+          "firstLetter": "f",
+          "lastLetter": "e"
+        },
+
+      ].filter(this.tableFilter)
+    },
     /** mystery game colors handler */
     gameStateLookupItems() {
       const that = this;
@@ -441,47 +538,8 @@ export default {
 
     },
     tableItems() {
-      const that = this;
-      return this.mysteryCountryFormat.filter(oData => {
-        const {country, continent, firstLetter, lastLetter} = oData;
-        let toShow = true;
-        //lazy chain
-        if (that.continentFilter) {
-          toShow = toShow && continent.toLowerCase().includes(that.continentFilter.toLowerCase())
-        }
-        if (that.firstLetterFilter) {
-          toShow = toShow && firstLetter.includes(that.firstLetterFilter)
-        }
-        if (that.lastLetterFilter) {
-          toShow = toShow && lastLetter.includes(that.lastLetterFilter)
-        }
-
-        if (this.continentFilterExclude.length > 0) {
-          for (let i = 0; i < this.continentFilterExclude.length; i++) {
-            const rowExclude = this.continentFilterExclude[i];
-            toShow = toShow && !rowExclude.includes(continent)
-            if (!toShow) return toShow;
-          }
-        }
-        if (this.firstLetterFilterExclude.length > 0) {
-          for (let i = 0; i < this.firstLetterFilterExclude.length; i++) {
-            const rowExclude = this.firstLetterFilterExclude[i];
-            toShow = toShow && !rowExclude.includes(firstLetter)
-            if (!toShow) return toShow;
-          }
-        }
-        if (this.lastLetterFilterExclude.length > 0) {
-          for (let i = 0; i < this.lastLetterFilterExclude.length; i++) {
-            const rowExclude = this.lastLetterFilterExclude[i];
-            toShow = toShow && !rowExclude.includes(lastLetter)
-            if (!toShow) return toShow;
-          }
-        }
-
-        return toShow;
-
-
-      });
+      // const that = this;
+      return this.mysteryCountryFormat.filter(this.tableFilter)
 
     },
 
