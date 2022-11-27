@@ -37,7 +37,10 @@
             <v-col cols="6">
               <v-combobox
                 solo hide-details clearable
+                data-lpignore="true"
+
                 label="Continent"
+                name="Continent"
                 v-model="continentFilter"
                 :items="CountryHeaders"
 
@@ -47,6 +50,7 @@
               <v-autocomplete
                 solo hide-details clearable multiple deletable-chips chips
                 label="Continent Exclude"
+                name="Continent Exclude"
                 v-model="continentFilterExclude"
                 :items="CountryHeaders"
               />
@@ -56,7 +60,10 @@
             <v-col cols="6">
               <v-combobox
                 solo hide-details clearable
+                data-lpignore="true"
+
                 label="firstLetterFilter"
+                name="firstLetterFilter"
                 v-model="firstLetterFilter"
                 :items="firstLetterItems"
               />
@@ -64,7 +71,10 @@
             <v-col cols="6">
               <v-autocomplete
                 solo hide-details clearable multiple deletable-chips chips
+                data-lpignore="true"
+
                 label="firstLetterFilter Exclude"
+                name="firstLetterFilter Exclude"
                 v-model="firstLetterFilterExclude"
                 :items="firstLetterItems"
               />
@@ -73,7 +83,10 @@
             <v-col cols="6">
               <v-combobox
                 solo hide-details clearable
+                data-lpignore="true"
+                autocomplete="off"
                 label="lastLetterFilter"
+                name="lastLetterFilter"
                 v-model="lastLetterFilter"
                 :items="lastLetterItems"
               />
@@ -81,7 +94,10 @@
             <v-col cols="6">
               <v-autocomplete
                 solo hide-details clearable multiple deletable-chips chips
+                data-lpignore="true"
+
                 label="lastLetterFilter Exclude"
+                name="lastLetterFilter Exclude"
                 v-model="lastLetterFilterExclude"
                 :items="lastLetterItems"
               />
