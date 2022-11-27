@@ -19,12 +19,19 @@
         </v-card-title>
         <v-card-text>
           <v-row no-gutters>
-            <v-col cols="12">
+            <v-col cols="11">
               <v-text-field
                 solo hide-details clearable
                 placeholder="search"
                 v-model="tableSearch"
               />
+
+
+            </v-col>
+            <v-col cols="1">
+              <v-btn @click="clearFilters">
+                Clear
+              </v-btn>
             </v-col>
 <!--           Continent One section-->
             <v-col cols="6">
@@ -39,7 +46,9 @@
                 solo hide-details clearable multiple
                 placeholder="Continent Exclude"
                 v-model="continentFilterExclude"
+                :items="CountryHeaders"
               />
+<!--              {{ continentFilterExclude }}-->
             </v-col>
             <!--     firstLetterFilter       One section-->
             <v-col cols="6">
@@ -54,6 +63,7 @@
                 solo hide-details clearable multiple
                 placeholder="firstLetterFilter Exclude"
                 v-model="firstLetterFilterExclude"
+
               />
             </v-col>
             <!--        lastLetterFilter    One section-->
@@ -112,7 +122,10 @@ export default {
     return {
       tableSearch: "",
       continentFilter: "",
-      continentFilterExclude: [],
+      // continentFilterExclude: [],
+      /* dev should only show Oceania */
+      continentFilterExclude: [ "Europe", "Asia", "Africa", "South America", "North America" ]
+      ,
       firstLetterFilter:"",
       firstLetterFilterExclude:[],
       lastLetterFilter:"",
@@ -120,10 +133,23 @@ export default {
 
     }
   },
+  methods:{
+    clearFilters(){
+      this.tableSearch = "";
+      this.continentFilter = "";
+      this.firstLetterFilter = "";
+      this.lastLetterFilter = "";
+      this.continentFilterExclude = [];//forget if this works or not
+      this.firstLetterFilterExclude = [];
+      this.lastLetterFilterExclude = [];
+    }
+  },
   computed:{
+    /* raw data */
     mysteryCountryFormat(){
       return mysteryCountryFormat;
     },
+    /* actually continents */
     CountryHeaders(){
       return CountryHeaders;
     },
@@ -162,7 +188,7 @@ export default {
         let toShow = true;
         //lazy chain
         if(that.continentFilter){
-          toShow = toShow &&continent.toLowerCase().includes(that.continentFilter.toLowerCase())
+          toShow = toShow && continent.toLowerCase().includes(that.continentFilter.toLowerCase())
         }
         if(that.firstLetterFilter){
           toShow = toShow &&firstLetter.includes(that.firstLetterFilter)
@@ -171,7 +197,27 @@ export default {
           toShow = toShow &&lastLetter.includes(that.lastLetterFilter)
         }
 
-
+        if(this.continentFilterExclude.length > 0){
+          for (let i = 0; i < this.continentFilterExclude.length; i++) {
+            const rowExclude = this.continentFilterExclude[i];
+            toShow = toShow && !rowExclude.includes(continent)
+            if(!toShow) return toShow;
+          }
+        }
+        if(this.firstLetterFilterExclude.length > 0){
+          for (let i = 0; i < this.firstLetterFilterExclude.length; i++) {
+            const rowExclude = this.firstLetterFilterExclude[i];
+            toShow = toShow && !rowExclude.includes(firstLetter)
+            if(!toShow) return toShow;
+          }
+        }
+        if(this.lastLetterFilterExclude.length > 0){
+          for (let i = 0; i < this.lastLetterFilterExclude.length; i++) {
+            const rowExclude = this.lastLetterFilterExclude[i];
+            toShow = toShow && !rowExclude.includes(lastLetter)
+            if(!toShow) return toShow;
+          }
+        }
 
         return toShow;
 
