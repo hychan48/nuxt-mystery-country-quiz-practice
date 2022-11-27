@@ -215,12 +215,31 @@ export default {
       const that = this;
       function fl(fl){
         that.firstLetterFilter = that.lastGameState.firstLetter;
+
+
+        that.continentFilterExclude.push(that.lastGameState.continent);
+        that.continentFilterExclude = uniq(that.continentFilterExclude);
+        that.lastLetterFilterExclude.push(that.lastGameState.lastLetter);
+        that.lastLetterFilterExclude = uniq(that.lastLetterFilterExclude);
+
       }
       function ll(ll){
         that.lastLetterFilter = that.lastGameState.lastLetter;
+
+        that.continentFilterExclude.push(that.lastGameState.continent);
+        that.continentFilterExclude = uniq(that.continentFilterExclude);
+
+        that.firstLetterFilterExclude.push(that.lastGameState.firstLetter);
+        that.firstLetterFilterExclude = uniq(that.firstLetterFilterExclude);
+
       }
       function co(continent){
         that.continentFilter = that.lastGameState.continent;
+
+        that.firstLetterFilterExclude.push(that.lastGameState.firstLetter);
+        that.firstLetterFilterExclude = uniq(that.firstLetterFilterExclude);
+        that.lastLetterFilterExclude.push(that.lastGameState.lastLetter);
+        that.lastLetterFilterExclude = uniq(that.lastLetterFilterExclude);
       }
 
       /**
