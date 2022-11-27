@@ -1,5 +1,10 @@
 # nuxt-mystery-country-quiz-practice
 
+# quiz
+https://www.jetpunk.com/user-quizzes/1260664/find-the-mystery-country-using-color-clues-randomized
+https://www.jetpunk.com/quizzes/how-many-countries-can-you-name
+
+
 ## Build Setup
 
 ```bash
