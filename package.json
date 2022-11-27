@@ -6,7 +6,9 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "generate_git": "cross-env NUXT_ENV_ROUTER_BASE='/nuxt-mystery-country-quiz-practice/' NUXT_ENV_BASE_URL='https://hychan48.github.io/' nuxt generate",
+    "deploy_git": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
@@ -19,6 +21,7 @@
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.12.1",
-    "mocha": "^10.1.0"
+    "mocha": "^10.1.0",
+    "push-dir": "^0.4.1"
   }
 }

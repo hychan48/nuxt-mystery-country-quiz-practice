@@ -1,6 +1,18 @@
 import colors from 'vuetify/es5/util/colors'
+const env = {
+  // BASE_URL : process.env.NUXT_BASE_URL || 'http://localhost:3000',//auto-overides but might be useful
+  BASE_URL: process.env.NUXT_ENV_BASE_URL || 'http://localhost:3000',
+  ROUTER_BASE: process.env.NUXT_ENV_ROUTER_BASE || '/',
+
+  //Will be populated
+  // baseUrl:undefined,
+}
+env.baseUrl = env.BASE_URL + env.ROUTER_BASE
 
 export default {
+  router: {
+    base: env.ROUTER_BASE,
+  },
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
