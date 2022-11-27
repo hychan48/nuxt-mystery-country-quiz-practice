@@ -9,7 +9,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - nuxt-mystery-country-quiz-practice',
+    // titleTemplate: '%s - nuxt-mystery-country-quiz-practice',
+    titleTemplate: '%s',
     title: 'nuxt-mystery-country-quiz-practice',
     meta: [
       { charset: 'utf-8' },

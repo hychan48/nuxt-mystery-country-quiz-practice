@@ -1,19 +1,29 @@
 <template>
   <v-row>
-    <v-col class="text-center">
-      <img
-        src="/v.png"
-        alt="Vuetify.js"
-        class="mb-5"
+<v-col notes="Links">
+  <v-card
+    :hover=false
+  >
+  
+    <v-card-title notes="Links"
+
+    >
+      <v-icon
+        left
       >
-      <blockquote class="blockquote">
-        &#8220;First, solve the problem. Then, write the code.&#8221;
-        <footer>
-          <small>
-            <em>&mdash;John Johnson</em>
-          </small>
-        </footer>
-      </blockquote>
-    </v-col>
+        mdi-bell-ring
+      </v-icon>
+      <span class="title font-weight-light">
+        Links
+      </span>
+    </v-card-title>
+    <v-card-text>
+      <a
+        href="https://www.jetpunk.com/quizzes/how-many-countries-can-you-name"
+        target="_blank"
+      >https://www.jetpunk.com/quizzes/how-many-countries-can-you-name</a>
+    </v-card-text>
+  </v-card>
+</v-col>
   </v-row>
 </template>
