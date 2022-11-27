@@ -18,27 +18,73 @@
           </span>
         </v-card-title>
         <v-card-text>
-          <v-text-field
-            solo hide-details clearable
-            placeholder="search"
-            v-model="tableSearch"
-          />
-          <v-text-field
-            solo hide-details clearable
-            placeholder="Continent"
-            v-model="continentFilter"
-          />
-          <v-text-field
-            solo hide-details clearable
-            placeholder="firstLetterFilter"
-            v-model="firstLetterFilter"
-          />
-          <v-text-field
-            solo hide-details clearable
-            placeholder="lastLetterFilter"
-            v-model="lastLetterFilter"
-          />
+          <v-row no-gutters>
+            <v-col cols="12">
+              <v-text-field
+                solo hide-details clearable
+                placeholder="search"
+                v-model="tableSearch"
+              />
+            </v-col>
+<!--           Continent One section-->
+            <v-col cols="6">
+              <v-text-field
+                solo hide-details clearable
+                placeholder="Continent"
+                v-model="continentFilter"
+              />
+            </v-col>
+            <v-col cols="6">
+              <v-combobox
+                solo hide-details clearable multiple
+                placeholder="Continent Exclude"
+                v-model="continentFilterExclude"
+              />
+            </v-col>
+            <!--     firstLetterFilter       One section-->
+            <v-col cols="6">
+              <v-text-field
+                solo hide-details clearable
+                placeholder="firstLetterFilter"
+                v-model="firstLetterFilter"
+              />
+            </v-col>
+            <v-col cols="6">
+              <v-combobox
+                solo hide-details clearable multiple
+                placeholder="firstLetterFilter Exclude"
+                v-model="firstLetterFilterExclude"
+              />
+            </v-col>
+            <!--        lastLetterFilter    One section-->
+            <v-col cols="6">
+              <v-text-field
+                solo hide-details clearable
+                placeholder="lastLetterFilter"
+                v-model="lastLetterFilter"
+              />
+            </v-col>
+            <v-col cols="6">
+              <v-combobox
+                solo hide-details clearable multiple
+                placeholder="lastLetterFilter Exclude"
+                v-model="lastLetterFilterExclude"
+              />
+<!--              {{lastLetterFilterExclude}}-->
+            </v-col>
+            <!--            One section-->
+            <v-col cols="6">
 
+            </v-col>
+            <v-col cols="6">
+
+            </v-col>
+          </v-row>
+
+
+
+
+<!--V data table-->
           <v-data-table
             :headers="tableHeaders"
             :items="tableItems"
@@ -66,8 +112,11 @@ export default {
     return {
       tableSearch: "",
       continentFilter: "",
+      continentFilterExclude: [],
       firstLetterFilter:"",
+      firstLetterFilterExclude:[],
       lastLetterFilter:"",
+      lastLetterFilterExclude:[],
 
     }
   },
