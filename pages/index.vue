@@ -33,7 +33,7 @@
                 Clear
               </v-btn>
             </v-col>
-<!--           Continent One section-->
+            <!--           Continent One section-->
             <v-col cols="6">
               <v-combobox
                 solo hide-details clearable
@@ -54,7 +54,7 @@
                 v-model="continentFilterExclude"
                 :items="CountryHeaders"
               />
-<!--              {{ continentFilterExclude }}-->
+              <!--              {{ continentFilterExclude }}-->
             </v-col>
             <!--     firstLetterFilter       One section-->
             <v-col cols="6">
@@ -101,7 +101,7 @@
                 v-model="lastLetterFilterExclude"
                 :items="lastLetterItems"
               />
-<!--              {{lastLetterFilterExclude}}-->
+              <!--              {{lastLetterFilterExclude}}-->
             </v-col>
             <!--            One section-->
             <v-col cols="6">
@@ -112,25 +112,25 @@
             </v-col>
           </v-row>
 
-<!--game states-->
+          <!--game states-->
           <v-col cols="12">
-            {{lastGameState}}
+            {{ lastGameState }}
           </v-col>
-<v-col cols="12">
+          <v-col cols="12">
 
-  <v-btn
-    v-for="item in gameStateLookupItems"
-    :color="item.color"
-    @click="item.handler"
-    :disabled="!lastGameState.country"
-    v-text="item.label"
+            <v-btn
+              v-for="item in gameStateLookupItems"
+              :color="item.color"
+              @click="item.handler"
+              :disabled="!lastGameState.country"
+              v-text="item.label"
 
 
-  ></v-btn>
+            ></v-btn>
 
-</v-col>
+          </v-col>
 
-<!--V data table-->
+          <!--V data table-->
           <v-data-table
             :headers="tableHeaders"
             :items="tableItems"
@@ -148,21 +148,22 @@
           </v-data-table>
           <!--            {{ CountryHeaders }}-->
           <!--            {{ mysteryCountryFormat }}-->
-<!--          {{ firstLetterItems }}-->
+          <!--          {{ firstLetterItems }}-->
 
-<!--          {{this.mysteryCountryFormat.map(val => val.lastLetter).sort()}}-->
+          <!--          {{this.mysteryCountryFormat.map(val => val.lastLetter).sort()}}-->
         </v-card-text>
       </v-card>
     </v-col>
   </v-row>
 </template>
 <script>
-const CountryHeaders = ["Europe","Asia","Africa",'North America','South America',"Oceania"];
+const CountryHeaders = ["Europe", "Asia", "Africa", 'North America', 'South America', "Oceania"];
 import mysteryCountryFormat from "~/dev/mysteryCountryFormat.json"
 import uniqBy from "lodash.uniqby"
 import uniq from "lodash.uniq"
+
 export default {
-  name:'indexPage',
+  name: 'indexPage',
   data() {
     return {
       tableSearch: "",
@@ -170,19 +171,19 @@ export default {
       continentFilterExclude: [],
       /* dev should only show Oceania */
       // continentFilterExclude: [ "Europe", "Asia", "Africa", "South America", "North America" ],
-      firstLetterFilter:"",
-      firstLetterFilterExclude:[],
-      lastLetterFilter:"",
-      lastLetterFilterExclude:[],
+      firstLetterFilter: "",
+      firstLetterFilterExclude: [],
+      lastLetterFilter: "",
+      lastLetterFilterExclude: [],
 
-      lastGameState:{},
-      gameStates:[],
+      lastGameState: {},
+      gameStates: [],
 
     }
   },
-  methods:{
+  methods: {
     /* sets last gamestate and clipboard*/
-    async countryBtnEvent(item){
+    async countryBtnEvent(item) {
       // console.log(item);
       const {continent, country, firstLetter, lastLetter} = item;
       /* push to state and filter */
@@ -193,10 +194,10 @@ export default {
 
     },
     /* game state handlers */
-    gameStateHandlerEvent(){
+    gameStateHandlerEvent() {
       //todo might not need?
     },
-    clearFilters(){
+    clearFilters() {
       this.tableSearch = "";
       this.continentFilter = "";
       this.firstLetterFilter = "";
@@ -209,43 +210,32 @@ export default {
       this.gameStates = [];//todo for undo
     }
   },
-  computed:{
+  computed: {
     /** mystery game colors handler */
-    gameStateLookupItems(){
+    gameStateLookupItems() {
       const that = this;
-      function fl(fl){
+
+      function fl(fl) {
         that.firstLetterFilter = that.lastGameState.firstLetter;
-
-
-        that.continentFilterExclude.push(that.lastGameState.continent);
-        that.continentFilterExclude = uniq(that.continentFilterExclude);
-        that.lastLetterFilterExclude.push(that.lastGameState.lastLetter);
-        that.lastLetterFilterExclude = uniq(that.lastLetterFilterExclude);
-
       }
-      function ll(ll){
+
+      function ll(ll) {
         that.lastLetterFilter = that.lastGameState.lastLetter;
 
-        that.continentFilterExclude.push(that.lastGameState.continent);
-        that.continentFilterExclude = uniq(that.continentFilterExclude);
 
-        that.firstLetterFilterExclude.push(that.lastGameState.firstLetter);
-        that.firstLetterFilterExclude = uniq(that.firstLetterFilterExclude);
 
       }
-      function co(continent){
+
+      function co(continent) {
         that.continentFilter = that.lastGameState.continent;
 
-        that.firstLetterFilterExclude.push(that.lastGameState.firstLetter);
-        that.firstLetterFilterExclude = uniq(that.firstLetterFilterExclude);
-        that.lastLetterFilterExclude.push(that.lastGameState.lastLetter);
-        that.lastLetterFilterExclude = uniq(that.lastLetterFilterExclude);
+
       }
 
       /**
        * reverse
        */
-      function none(){
+      function none() {
         that.continentFilterExclude.push(that.lastGameState.continent);
         that.continentFilterExclude = uniq(that.continentFilterExclude);
 
@@ -257,7 +247,8 @@ export default {
 
 
       }
-      function la_lm(landmass){
+
+      function la_lm(landmass) {
         that.firstLetterFilterExclude.push(that.lastGameState.firstLetter);
         that.firstLetterFilterExclude = uniq(that.firstLetterFilterExclude);
         that.lastLetterFilterExclude.push(that.lastGameState.lastLetter);
@@ -270,113 +261,174 @@ export default {
 
       const colorLookup = [
         //fl
-      {
-        color: "rgb(0, 255, 0)",
-        handler:function(){fl();        that.lastGameState = {};
-        },
-        label:"FL",
-      },
-        //ll
-        {color: "rgb(0, 0, 255)",
-          handler:function(){ll();        that.lastGameState = {};
+        {
+          color: "rgb(0, 255, 0)",
+          handler: function () {
+            fl();
+            that.continentFilterExclude.push(that.lastGameState.continent);
+            that.continentFilterExclude = uniq(that.continentFilterExclude);
+            that.lastLetterFilterExclude.push(that.lastGameState.lastLetter);
+            that.lastLetterFilterExclude = uniq(that.lastLetterFilterExclude);
+            that.lastGameState = {};
           },
-          label:"LL",
+          label: "FL",
+        },
+        //ll
+        {
+          color: "rgb(0, 0, 255)",
+          handler: function () {
+            ll();
+            that.continentFilterExclude.push(that.lastGameState.continent);
+            that.continentFilterExclude = uniq(that.continentFilterExclude);
+
+            that.firstLetterFilterExclude.push(that.lastGameState.firstLetter);
+            that.firstLetterFilterExclude = uniq(that.firstLetterFilterExclude);
+            that.lastGameState = {};
+          },
+          label: "LL",
         },
         //continent
-        {color: "rgb(255, 0, 0)",
-          handler:function(){co();        that.lastGameState = {};
+        {
+          color: "rgb(255, 0, 0)",
+          handler: function () {
+            co();
+            that.firstLetterFilterExclude.push(that.lastGameState.firstLetter);
+            that.firstLetterFilterExclude = uniq(that.firstLetterFilterExclude);
+            that.lastLetterFilterExclude.push(that.lastGameState.lastLetter);
+            that.lastLetterFilterExclude = uniq(that.lastLetterFilterExclude);
+            that.lastGameState = {};
           },
-          label:"CO",
+          label: "CO",
         },
         //landmass (LA)
-        {color: "rgb(255, 255, 0)",
-          handler:function(){la_lm();        that.lastGameState = {};
+        {
+          color: "rgb(255, 255, 0)",
+          handler: function () {
+            la_lm();
+            that.lastGameState = {};
           },
-          label:"LM",},
+          label: "LM",
+        },
         //fl + ll
-        {color: "rgb(0, 153, 153)",
-          handler:function(){fl();ll();        that.lastGameState = {};
+        {
+          color: "rgb(0, 153, 153)",
+          handler: function () {
+            fl();
+            ll();
+            that.lastGameState = {};
           },
-          label:"FL LL",},
+          label: "FL LL",
+        },
         //fl + continent
-        {color: "rgb(0, 0, 0)",
-          handler:function(){fl();co();        that.lastGameState = {};
+        {
+          color: "rgb(0, 0, 0)",
+          handler: function () {
+            fl();
+            co();
+            that.lastGameState = {};
           },
-          label:"FL CO",
+          label: "FL CO",
         },
         // fl * landmass
-        {color: "rgb(153, 153, 0)",
-          handler:function(){fl();la_lm();        that.lastGameState = {};
+        {
+          color: "rgb(153, 153, 0)",
+          handler: function () {
+            fl();
+            la_lm();
+            that.lastGameState = {};
           },
-          label:"FL LM",
+          label: "FL LM",
         },
         //ll and continent
-        {color: "rgb(153, 0, 153)",
-          handler:function(){ll();co();        that.lastGameState = {};
+        {
+          color: "rgb(153, 0, 153)",
+          handler: function () {
+            ll();
+            co();
+            that.lastGameState = {};
           },
-          label:"LL CO",
+          label: "LL CO",
         },
         //ll * la
-        {color: "rgb(51, 255, 255)",
-          handler:function(){ll();la_lm();        that.lastGameState = {};
+        {
+          color: "rgb(51, 255, 255)",
+          handler: function () {
+            ll();
+            la_lm();
+            that.lastGameState = {};
           },
-          label:"LL LM",
+          label: "LL LM",
         },
         //fl ll co
-        {color: "rgb(119, 0, 0)",
-          handler:function(){fl();ll();co();        that.lastGameState = {};
+        {
+          color: "rgb(119, 0, 0)",
+          handler: function () {
+            fl();
+            ll();
+            co();
+            that.lastGameState = {};
           },
-          label:"FL LL CO",
+          label: "FL LL CO",
         },
         //fl ll landmass
-        {color: "rgb(0, 119, 0)",
-          handler:function(){fl();ll();la_lm();        that.lastGameState = {};
+        {
+          color: "rgb(0, 119, 0)",
+          handler: function () {
+            fl();
+            ll();
+            la_lm();
+            that.lastGameState = {};
           },
-          label:"FL LL LM",},
+          label: "FL LL LM",
+        },
         //none
-          {color: "rgb(255, 255, 255)",
-            handler:function(){none();        that.lastGameState = {};
-            },
-            label:"NONE",},
+        {
+          color: "rgb(255, 255, 255)",
+          handler: function () {
+            none();
+            that.lastGameState = {};
+          },
+          label: "NONE",
+        },
 
-    ]
+      ]
 
       return colorLookup;
     },
-          /* raw data */
-    mysteryCountryFormat(){
+    /* raw data */
+    mysteryCountryFormat() {
       return mysteryCountryFormat;
     },
     /* actually continents */
-    CountryHeaders(){
+    CountryHeaders() {
       return CountryHeaders;
     },
-    firstLetterItems(){
+    firstLetterItems() {
       // return uniqBy(this.mysteryCountryFormat,"firstLetter").map(val => val.firstLetter);
       return uniq(this.mysteryCountryFormat.map(val => val.firstLetter)).sort();
 
     },
-    lastLetterItems(){
+    lastLetterItems() {
       // return uniqBy(this.mysteryCountryFormat.map(val => val.lastLetter),"lastLetter").sort();
       return uniq(this.mysteryCountryFormat.map(val => val.lastLetter)).sort();
     },
-    tableHeaders(){
+    tableHeaders() {
       return [
         {
-          text:"Country",
-          value:'country'
+          text: "Country",
+          value: 'country'
         },
         {
-          text:"Continent",
-          value:"continent",
+          text: "Continent",
+          value: "continent",
         },
         {
-          text:"FL",
-          value:"firstLetter",
+          text: "FL",
+          value: "firstLetter",
         },
         {
-          text:"LL",
-          value:"lastLetter",
+          text: "LL",
+          value: "lastLetter",
         },
 
       ]
@@ -388,41 +440,41 @@ export default {
       // })
 
     },
-    tableItems(){
+    tableItems() {
       const that = this;
-      return this.mysteryCountryFormat.filter(oData =>{
-        const {country, continent, firstLetter,lastLetter} = oData;
+      return this.mysteryCountryFormat.filter(oData => {
+        const {country, continent, firstLetter, lastLetter} = oData;
         let toShow = true;
         //lazy chain
-        if(that.continentFilter){
+        if (that.continentFilter) {
           toShow = toShow && continent.toLowerCase().includes(that.continentFilter.toLowerCase())
         }
-        if(that.firstLetterFilter){
-          toShow = toShow &&firstLetter.includes(that.firstLetterFilter)
+        if (that.firstLetterFilter) {
+          toShow = toShow && firstLetter.includes(that.firstLetterFilter)
         }
-        if(that.lastLetterFilter){
-          toShow = toShow &&lastLetter.includes(that.lastLetterFilter)
+        if (that.lastLetterFilter) {
+          toShow = toShow && lastLetter.includes(that.lastLetterFilter)
         }
 
-        if(this.continentFilterExclude.length > 0){
+        if (this.continentFilterExclude.length > 0) {
           for (let i = 0; i < this.continentFilterExclude.length; i++) {
             const rowExclude = this.continentFilterExclude[i];
             toShow = toShow && !rowExclude.includes(continent)
-            if(!toShow) return toShow;
+            if (!toShow) return toShow;
           }
         }
-        if(this.firstLetterFilterExclude.length > 0){
+        if (this.firstLetterFilterExclude.length > 0) {
           for (let i = 0; i < this.firstLetterFilterExclude.length; i++) {
             const rowExclude = this.firstLetterFilterExclude[i];
             toShow = toShow && !rowExclude.includes(firstLetter)
-            if(!toShow) return toShow;
+            if (!toShow) return toShow;
           }
         }
-        if(this.lastLetterFilterExclude.length > 0){
+        if (this.lastLetterFilterExclude.length > 0) {
           for (let i = 0; i < this.lastLetterFilterExclude.length; i++) {
             const rowExclude = this.lastLetterFilterExclude[i];
             toShow = toShow && !rowExclude.includes(lastLetter)
-            if(!toShow) return toShow;
+            if (!toShow) return toShow;
           }
         }
 
