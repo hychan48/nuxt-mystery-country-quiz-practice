@@ -227,9 +227,22 @@ export default {
        * reverse
        */
       function none(){
+        that.continentFilterExclude.push(that.lastGameState.continent);
+        that.continentFilterExclude = uniq(that.continentFilterExclude);
+
+
+        that.firstLetterFilterExclude.push(that.lastGameState.firstLetter);
+        that.firstLetterFilterExclude = uniq(that.firstLetterFilterExclude);
+        that.lastLetterFilterExclude.push(that.lastGameState.lastLetter);
+        that.lastLetterFilterExclude = uniq(that.lastLetterFilterExclude);
+
 
       }
       function la_lm(landmass){
+        that.firstLetterFilterExclude.push(that.lastGameState.firstLetter);
+        that.firstLetterFilterExclude = uniq(that.firstLetterFilterExclude);
+        that.lastLetterFilterExclude.push(that.lastGameState.lastLetter);
+        that.lastLetterFilterExclude = uniq(that.lastLetterFilterExclude);
 
         //land mass is hard so ignoring for now? but might basically mean none + same continents or groups
 
