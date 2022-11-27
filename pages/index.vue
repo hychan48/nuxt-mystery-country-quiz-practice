@@ -112,8 +112,23 @@
             </v-col>
           </v-row>
 
+<!--game states-->
+          <v-col cols="12">
+            {{lastGameState}}
+          </v-col>
+<v-col cols="12">
+
+  <v-btn
+    v-for="item in gameStateLookupItems"
+    :color="item.color"
+    @click="item.handler"
+    :disabled="!lastGameState.country"
+    v-text="item.label"
 
 
+  ></v-btn>
+
+</v-col>
 
 <!--V data table-->
           <v-data-table
@@ -123,7 +138,11 @@
             class="elevation-1"
             :search="tableSearch"
           >
-
+            <template v-slot:item.country="{ item }">
+              <v-btn @click="countryBtnEvent(item)">
+                {{ item.country }}
+              </v-btn>
+            </template>
 
 
           </v-data-table>
@@ -156,9 +175,27 @@ export default {
       lastLetterFilter:"",
       lastLetterFilterExclude:[],
 
+      lastGameState:{},
+      gameStates:[],
+
     }
   },
   methods:{
+    /* sets last gamestate and clipboard*/
+    async countryBtnEvent(item){
+      // console.log(item);
+      const {continent, country, firstLetter, lastLetter} = item;
+      /* push to state and filter */
+      this.gameStates.push(item);
+      /* copy to clipboard */
+      this.lastGameState = {...item}
+      await navigator.clipboard.writeText(country);
+
+    },
+    /* game state handlers */
+    gameStateHandlerEvent(){
+      //todo might not need?
+    },
     clearFilters(){
       this.tableSearch = "";
       this.continentFilter = "";
@@ -167,10 +204,114 @@ export default {
       this.continentFilterExclude = [];//forget if this works or not
       this.firstLetterFilterExclude = [];
       this.lastLetterFilterExclude = [];
+
+      this.lastGameState = {};
+      this.gameStates = [];//todo for undo
     }
   },
   computed:{
-    /* raw data */
+    /** mystery game colors handler */
+    gameStateLookupItems(){
+      const that = this;
+      function fl(fl){
+        that.firstLetterFilter = that.lastGameState.firstLetter;
+      }
+      function ll(ll){
+        that.lastLetterFilter = that.lastGameState.lastLetter;
+      }
+      function co(continent){
+        that.continentFilter = that.lastGameState.continent;
+      }
+
+      /**
+       * reverse
+       */
+      function none(){
+
+      }
+      function la_lm(landmass){
+
+        //land mass is hard so ignoring for now? but might basically mean none + same continents or groups
+
+      }
+
+
+      const colorLookup = [
+        //fl
+      {
+        color: "rgb(0, 255, 0)",
+        handler:function(){fl();        that.lastGameState = {};
+        },
+        label:"FL",
+      },
+        //ll
+        {color: "rgb(0, 0, 255)",
+          handler:function(){ll();        that.lastGameState = {};
+          },
+          label:"LL",
+        },
+        //continent
+        {color: "rgb(255, 0, 0)",
+          handler:function(){co();        that.lastGameState = {};
+          },
+          label:"CO",
+        },
+        //landmass (LA)
+        {color: "rgb(255, 255, 0)",
+          handler:function(){la_lm();        that.lastGameState = {};
+          },
+          label:"LM",},
+        //fl + ll
+        {color: "rgb(0, 153, 153)",
+          handler:function(){fl();ll();        that.lastGameState = {};
+          },
+          label:"FL LL",},
+        //fl + continent
+        {color: "rgb(0, 0, 0)",
+          handler:function(){fl();co();        that.lastGameState = {};
+          },
+          label:"FL CO",
+        },
+        // fl * landmass
+        {color: "rgb(153, 153, 0)",
+          handler:function(){fl();la_lm();        that.lastGameState = {};
+          },
+          label:"FL LM",
+        },
+        //ll and continent
+        {color: "rgb(153, 0, 153)",
+          handler:function(){ll();co();        that.lastGameState = {};
+          },
+          label:"LL CO",
+        },
+        //ll * la
+        {color: "rgb(51, 255, 255)",
+          handler:function(){ll();la_lm();        that.lastGameState = {};
+          },
+          label:"LL LM",
+        },
+        //fl ll co
+        {color: "rgb(119, 0, 0)",
+          handler:function(){fl();ll();co();        that.lastGameState = {};
+          },
+          label:"FL LL CO",
+        },
+        //fl ll landmass
+        {color: "rgb(0, 119, 0)",
+          handler:function(){fl();ll();la_lm();        that.lastGameState = {};
+          },
+          label:"FL LL LM",},
+        //none
+          {color: "rgb(255, 255, 255)",
+            handler:function(){none();        that.lastGameState = {};
+            },
+            label:"NONE",},
+
+    ]
+
+      return colorLookup;
+    },
+          /* raw data */
     mysteryCountryFormat(){
       return mysteryCountryFormat;
     },
