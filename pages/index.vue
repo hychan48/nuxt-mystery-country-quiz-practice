@@ -35,16 +35,18 @@
             </v-col>
 <!--           Continent One section-->
             <v-col cols="6">
-              <v-text-field
+              <v-combobox
                 solo hide-details clearable
-                placeholder="Continent"
+                label="Continent"
                 v-model="continentFilter"
+                :items="CountryHeaders"
+
               />
             </v-col>
             <v-col cols="6">
-              <v-combobox
-                solo hide-details clearable multiple
-                placeholder="Continent Exclude"
+              <v-autocomplete
+                solo hide-details clearable multiple deletable-chips chips
+                label="Continent Exclude"
                 v-model="continentFilterExclude"
                 :items="CountryHeaders"
               />
@@ -52,33 +54,36 @@
             </v-col>
             <!--     firstLetterFilter       One section-->
             <v-col cols="6">
-              <v-text-field
+              <v-combobox
                 solo hide-details clearable
-                placeholder="firstLetterFilter"
+                label="firstLetterFilter"
                 v-model="firstLetterFilter"
+                :items="firstLetterItems"
               />
             </v-col>
             <v-col cols="6">
-              <v-combobox
-                solo hide-details clearable multiple
-                placeholder="firstLetterFilter Exclude"
+              <v-autocomplete
+                solo hide-details clearable multiple deletable-chips chips
+                label="firstLetterFilter Exclude"
                 v-model="firstLetterFilterExclude"
-
+                :items="firstLetterItems"
               />
             </v-col>
             <!--        lastLetterFilter    One section-->
             <v-col cols="6">
-              <v-text-field
+              <v-combobox
                 solo hide-details clearable
-                placeholder="lastLetterFilter"
+                label="lastLetterFilter"
                 v-model="lastLetterFilter"
+                :items="lastLetterItems"
               />
             </v-col>
             <v-col cols="6">
-              <v-combobox
-                solo hide-details clearable multiple
-                placeholder="lastLetterFilter Exclude"
+              <v-autocomplete
+                solo hide-details clearable multiple deletable-chips chips
+                label="lastLetterFilter Exclude"
                 v-model="lastLetterFilterExclude"
+                :items="lastLetterItems"
               />
 <!--              {{lastLetterFilterExclude}}-->
             </v-col>
@@ -108,6 +113,9 @@
           </v-data-table>
           <!--            {{ CountryHeaders }}-->
           <!--            {{ mysteryCountryFormat }}-->
+<!--          {{ firstLetterItems }}-->
+
+<!--          {{this.mysteryCountryFormat.map(val => val.lastLetter).sort()}}-->
         </v-card-text>
       </v-card>
     </v-col>
@@ -116,6 +124,8 @@
 <script>
 const CountryHeaders = ["Europe","Asia","Africa",'North America','South America',"Oceania"];
 import mysteryCountryFormat from "~/dev/mysteryCountryFormat.json"
+import uniqBy from "lodash.uniqby"
+import uniq from "lodash.uniq"
 export default {
   name:'indexPage',
   data() {
@@ -124,8 +134,7 @@ export default {
       continentFilter: "",
       // continentFilterExclude: [],
       /* dev should only show Oceania */
-      continentFilterExclude: [ "Europe", "Asia", "Africa", "South America", "North America" ]
-      ,
+      continentFilterExclude: [ "Europe", "Asia", "Africa", "South America", "North America" ],
       firstLetterFilter:"",
       firstLetterFilterExclude:[],
       lastLetterFilter:"",
@@ -152,6 +161,15 @@ export default {
     /* actually continents */
     CountryHeaders(){
       return CountryHeaders;
+    },
+    firstLetterItems(){
+      // return uniqBy(this.mysteryCountryFormat,"firstLetter").map(val => val.firstLetter);
+      return uniq(this.mysteryCountryFormat.map(val => val.firstLetter)).sort();
+
+    },
+    lastLetterItems(){
+      // return uniqBy(this.mysteryCountryFormat.map(val => val.lastLetter),"lastLetter").sort();
+      return uniq(this.mysteryCountryFormat.map(val => val.lastLetter)).sort();
     },
     tableHeaders(){
       return [
