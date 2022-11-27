@@ -4,7 +4,7 @@
   <v-card
     :hover=false
   >
-  
+
     <v-card-title notes="Links"
 
     >
