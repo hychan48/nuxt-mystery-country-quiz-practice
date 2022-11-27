@@ -167,9 +167,9 @@ export default {
     return {
       tableSearch: "",
       continentFilter: "",
-      // continentFilterExclude: [],
+      continentFilterExclude: [],
       /* dev should only show Oceania */
-      continentFilterExclude: [ "Europe", "Asia", "Africa", "South America", "North America" ],
+      // continentFilterExclude: [ "Europe", "Asia", "Africa", "South America", "North America" ],
       firstLetterFilter:"",
       firstLetterFilterExclude:[],
       lastLetterFilter:"",
