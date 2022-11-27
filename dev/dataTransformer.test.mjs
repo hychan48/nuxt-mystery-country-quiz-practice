@@ -80,7 +80,7 @@ describe('dataTransformer', function(){
    * Landmass (ignore for now)
    */
   const aRows = JSON.parse(fs.readFileSync("dev/jet_punk_countries_by_region.json"));
-  const Headers = ["Europe","Asia","Africa",'North America','South America',"Oceania"]
+  const Headers = ["Europe","Asia","Africa",'North America','South America',"Oceania"];
   it('Mystery Country', function(){
     //assert.strictEqual(1,1);//require assert
     // console.log(aRows);
@@ -93,7 +93,15 @@ describe('dataTransformer', function(){
         const headerKey = Headers[j];
         const countryJ = row[headerKey];
         if(countryJ){
-          outRows.push(countryJ)
+          /* format */
+          // outRows.push(countryJ)
+
+          outRows.push({
+            country:countryJ,
+            continent:headerKey,
+            firstLetter:countryJ[0].toLowerCase(),
+            lastLetter:countryJ[countryJ.length - 1],
+          })
         }
 
       }
@@ -103,7 +111,8 @@ describe('dataTransformer', function(){
     writeToFile('mysteryCountryFormat.json', outRows)
     console.log(outRows.length);//missing 10 countries
 
-    //todo assert length 196
+    /* assert length */
+    assert.strictEqual(outRows.length,196);
 
 
   });

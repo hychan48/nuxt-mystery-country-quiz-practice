@@ -1,198 +1,1178 @@
 [
-  "Albania",
-  "Afghanistan",
-  "Algeria",
-  "Antigua and Barbuda",
-  "Argentina",
-  "Australia",
-  "Andorra",
-  "Armenia",
-  "Angola",
-  "Bahamas",
-  "Bolivia",
-  "Federated States of Micronesia",
-  "Austria",
-  "Azerbaijan",
-  "Benin",
-  "Barbados",
-  "Brazil",
-  "Belarus",
-  "Bahrain",
-  "Botswana",
-  "Belize",
-  "Chile",
-  "Fiji",
-  "Belgium",
-  "Bangladesh",
-  "Burkina Faso",
-  "Canada",
-  "Colombia",
-  "Kiribati",
-  "Bosnia and",
-  "Bhutan",
-  "Burundi",
-  "Costa Rica",
-  "Ecuador",
-  "Marshall Islands",
-  "Herzegovina",
-  "Brunei",
-  "Cameroon",
-  "Cuba",
-  "Guyana",
-  "Nauru",
-  "Bulgaria",
-  "Cambodia",
-  "Cape Verde",
-  "Dominica",
-  "Paraguay",
-  "New Zealand",
-  "Croatia",
-  "China",
-  "Central African Republic",
-  "Dominican Republic",
-  "Peru",
-  "Palau",
-  "Czech Republic",
-  "Cyprus",
-  "Chad",
-  "El Salvador",
-  "Suriname",
-  "Papua New Guinea",
-  "Denmark",
-  "East Timor",
-  "Comoros",
-  "Grenada",
-  "Uruguay",
-  "Samoa",
-  "Estonia",
-  "Georgia",
-  "Democratic Republic of the Congo",
-  "Guatemala",
-  "Venezuela",
-  "Solomon Islands",
-  "Finland",
-  "India",
-  "Djibouti",
-  "Haiti",
-  "Tonga",
-  "France",
-  "Indonesia",
-  "Egypt",
-  "Honduras",
-  "Tuvalu",
-  "Germany",
-  "Iran",
-  "Equatorial Guinea",
-  "Jamaica",
-  "Vanuatu",
-  "Greece",
-  "Iraq",
-  "Eritrea",
-  "Mexico",
-  "Hungary",
-  "Israel",
-  "Eswatini",
-  "Nicaragua",
-  "Iceland",
-  "Japan",
-  "Ethiopia",
-  "Panama",
-  "Ireland",
-  "Jordan",
-  "Gabon",
-  "Saint Kitts and Nevis",
-  "Italy",
-  "Kazakhstan",
-  "Gambia",
-  "Saint Lucia",
-  "Kosovo",
-  "Kuwait",
-  "Ghana",
-  "Saint Vincent and the",
-  "Latvia",
-  "Kyrgyzstan",
-  "Guinea",
-  "Grenadines",
-  "Liechtenstein",
-  "Laos",
-  "Guinea-Bissau",
-  "Trinidad and Tobago",
-  "Lithuania",
-  "Lebanon",
-  "Ivory Coast",
-  "United States",
-  "Luxembourg",
-  "Malaysia",
-  "Kenya",
-  "Malta",
-  "Maldives",
-  "Lesotho",
-  "Moldova",
-  "Mongolia",
-  "Liberia",
-  "Monaco",
-  "Myanmar",
-  "Libya",
-  "Montenegro",
-  "Nepal",
-  "Madagascar",
-  "Netherlands",
-  "North Korea",
-  "Malawi",
-  "North Macedonia",
-  "Oman",
-  "Mali",
-  "Norway",
-  "Pakistan",
-  "Mauritania",
-  "Poland",
-  "Philippines",
-  "Mauritius",
-  "Portugal",
-  "Qatar",
-  "Morocco",
-  "Romania",
-  "Saudi Arabia",
-  "Mozambique",
-  "Russia",
-  "Singapore",
-  "Namibia",
-  "San Marino",
-  "South Korea",
-  "Niger",
-  "Serbia",
-  "Sri Lanka",
-  "Nigeria",
-  "Slovakia",
-  "Syria",
-  "Republic of the Congo",
-  "Slovenia",
-  "Taiwan",
-  "Rwanda",
-  "Spain",
-  "Tajikistan",
-  "São Tomé and Príncipe",
-  "Sweden",
-  "Thailand",
-  "Senegal",
-  "Switzerland",
-  "Turkey",
-  "Seychelles",
-  "Ukraine",
-  "Turkmenistan",
-  "Sierra Leone",
-  "United Kingdom",
-  "United Arab Emirates",
-  "Somalia",
-  "Vatican City",
-  "Uzbekistan",
-  "South Africa",
-  "South Sudan",
-  "Sudan",
-  "Tanzania",
-  "Togo",
-  "Tunisia",
-  "Uganda",
-  "Zambia",
-  "Zimbabwe"
+  {
+    "country": "Albania",
+    "continent": "Europe",
+    "firstLetter": "a",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Afghanistan",
+    "continent": "Asia",
+    "firstLetter": "a",
+    "lastLetter": "n"
+  },
+  {
+    "country": "Algeria",
+    "continent": "Africa",
+    "firstLetter": "a",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Antigua and Barbuda",
+    "continent": "North America",
+    "firstLetter": "a",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Argentina",
+    "continent": "South America",
+    "firstLetter": "a",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Australia",
+    "continent": "Oceania",
+    "firstLetter": "a",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Andorra",
+    "continent": "Europe",
+    "firstLetter": "a",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Armenia",
+    "continent": "Asia",
+    "firstLetter": "a",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Angola",
+    "continent": "Africa",
+    "firstLetter": "a",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Bahamas",
+    "continent": "North America",
+    "firstLetter": "b",
+    "lastLetter": "s"
+  },
+  {
+    "country": "Bolivia",
+    "continent": "South America",
+    "firstLetter": "b",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Federated States of Micronesia",
+    "continent": "Oceania",
+    "firstLetter": "f",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Austria",
+    "continent": "Europe",
+    "firstLetter": "a",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Azerbaijan",
+    "continent": "Asia",
+    "firstLetter": "a",
+    "lastLetter": "n"
+  },
+  {
+    "country": "Benin",
+    "continent": "Africa",
+    "firstLetter": "b",
+    "lastLetter": "n"
+  },
+  {
+    "country": "Barbados",
+    "continent": "North America",
+    "firstLetter": "b",
+    "lastLetter": "s"
+  },
+  {
+    "country": "Brazil",
+    "continent": "South America",
+    "firstLetter": "b",
+    "lastLetter": "l"
+  },
+  {
+    "country": "Belarus",
+    "continent": "Europe",
+    "firstLetter": "b",
+    "lastLetter": "s"
+  },
+  {
+    "country": "Bahrain",
+    "continent": "Asia",
+    "firstLetter": "b",
+    "lastLetter": "n"
+  },
+  {
+    "country": "Botswana",
+    "continent": "Africa",
+    "firstLetter": "b",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Belize",
+    "continent": "North America",
+    "firstLetter": "b",
+    "lastLetter": "e"
+  },
+  {
+    "country": "Chile",
+    "continent": "South America",
+    "firstLetter": "c",
+    "lastLetter": "e"
+  },
+  {
+    "country": "Fiji",
+    "continent": "Oceania",
+    "firstLetter": "f",
+    "lastLetter": "i"
+  },
+  {
+    "country": "Belgium",
+    "continent": "Europe",
+    "firstLetter": "b",
+    "lastLetter": "m"
+  },
+  {
+    "country": "Bangladesh",
+    "continent": "Asia",
+    "firstLetter": "b",
+    "lastLetter": "h"
+  },
+  {
+    "country": "Burkina Faso",
+    "continent": "Africa",
+    "firstLetter": "b",
+    "lastLetter": "o"
+  },
+  {
+    "country": "Canada",
+    "continent": "North America",
+    "firstLetter": "c",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Colombia",
+    "continent": "South America",
+    "firstLetter": "c",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Kiribati",
+    "continent": "Oceania",
+    "firstLetter": "k",
+    "lastLetter": "i"
+  },
+  {
+    "country": "Bosnia and",
+    "continent": "Europe",
+    "firstLetter": "b",
+    "lastLetter": "d"
+  },
+  {
+    "country": "Bhutan",
+    "continent": "Asia",
+    "firstLetter": "b",
+    "lastLetter": "n"
+  },
+  {
+    "country": "Burundi",
+    "continent": "Africa",
+    "firstLetter": "b",
+    "lastLetter": "i"
+  },
+  {
+    "country": "Costa Rica",
+    "continent": "North America",
+    "firstLetter": "c",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Ecuador",
+    "continent": "South America",
+    "firstLetter": "e",
+    "lastLetter": "r"
+  },
+  {
+    "country": "Marshall Islands",
+    "continent": "Oceania",
+    "firstLetter": "m",
+    "lastLetter": "s"
+  },
+  {
+    "country": "Herzegovina",
+    "continent": "Europe",
+    "firstLetter": "h",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Brunei",
+    "continent": "Asia",
+    "firstLetter": "b",
+    "lastLetter": "i"
+  },
+  {
+    "country": "Cameroon",
+    "continent": "Africa",
+    "firstLetter": "c",
+    "lastLetter": "n"
+  },
+  {
+    "country": "Cuba",
+    "continent": "North America",
+    "firstLetter": "c",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Guyana",
+    "continent": "South America",
+    "firstLetter": "g",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Nauru",
+    "continent": "Oceania",
+    "firstLetter": "n",
+    "lastLetter": "u"
+  },
+  {
+    "country": "Bulgaria",
+    "continent": "Europe",
+    "firstLetter": "b",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Cambodia",
+    "continent": "Asia",
+    "firstLetter": "c",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Cape Verde",
+    "continent": "Africa",
+    "firstLetter": "c",
+    "lastLetter": "e"
+  },
+  {
+    "country": "Dominica",
+    "continent": "North America",
+    "firstLetter": "d",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Paraguay",
+    "continent": "South America",
+    "firstLetter": "p",
+    "lastLetter": "y"
+  },
+  {
+    "country": "New Zealand",
+    "continent": "Oceania",
+    "firstLetter": "n",
+    "lastLetter": "d"
+  },
+  {
+    "country": "Croatia",
+    "continent": "Europe",
+    "firstLetter": "c",
+    "lastLetter": "a"
+  },
+  {
+    "country": "China",
+    "continent": "Asia",
+    "firstLetter": "c",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Central African Republic",
+    "continent": "Africa",
+    "firstLetter": "c",
+    "lastLetter": "c"
+  },
+  {
+    "country": "Dominican Republic",
+    "continent": "North America",
+    "firstLetter": "d",
+    "lastLetter": "c"
+  },
+  {
+    "country": "Peru",
+    "continent": "South America",
+    "firstLetter": "p",
+    "lastLetter": "u"
+  },
+  {
+    "country": "Palau",
+    "continent": "Oceania",
+    "firstLetter": "p",
+    "lastLetter": "u"
+  },
+  {
+    "country": "Czech Republic",
+    "continent": "Europe",
+    "firstLetter": "c",
+    "lastLetter": "c"
+  },
+  {
+    "country": "Cyprus",
+    "continent": "Asia",
+    "firstLetter": "c",
+    "lastLetter": "s"
+  },
+  {
+    "country": "Chad",
+    "continent": "Africa",
+    "firstLetter": "c",
+    "lastLetter": "d"
+  },
+  {
+    "country": "El Salvador",
+    "continent": "North America",
+    "firstLetter": "e",
+    "lastLetter": "r"
+  },
+  {
+    "country": "Suriname",
+    "continent": "South America",
+    "firstLetter": "s",
+    "lastLetter": "e"
+  },
+  {
+    "country": "Papua New Guinea",
+    "continent": "Oceania",
+    "firstLetter": "p",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Denmark",
+    "continent": "Europe",
+    "firstLetter": "d",
+    "lastLetter": "k"
+  },
+  {
+    "country": "East Timor",
+    "continent": "Asia",
+    "firstLetter": "e",
+    "lastLetter": "r"
+  },
+  {
+    "country": "Comoros",
+    "continent": "Africa",
+    "firstLetter": "c",
+    "lastLetter": "s"
+  },
+  {
+    "country": "Grenada",
+    "continent": "North America",
+    "firstLetter": "g",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Uruguay",
+    "continent": "South America",
+    "firstLetter": "u",
+    "lastLetter": "y"
+  },
+  {
+    "country": "Samoa",
+    "continent": "Oceania",
+    "firstLetter": "s",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Estonia",
+    "continent": "Europe",
+    "firstLetter": "e",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Georgia",
+    "continent": "Asia",
+    "firstLetter": "g",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Democratic Republic of the Congo",
+    "continent": "Africa",
+    "firstLetter": "d",
+    "lastLetter": "o"
+  },
+  {
+    "country": "Guatemala",
+    "continent": "North America",
+    "firstLetter": "g",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Venezuela",
+    "continent": "South America",
+    "firstLetter": "v",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Solomon Islands",
+    "continent": "Oceania",
+    "firstLetter": "s",
+    "lastLetter": "s"
+  },
+  {
+    "country": "Finland",
+    "continent": "Europe",
+    "firstLetter": "f",
+    "lastLetter": "d"
+  },
+  {
+    "country": "India",
+    "continent": "Asia",
+    "firstLetter": "i",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Djibouti",
+    "continent": "Africa",
+    "firstLetter": "d",
+    "lastLetter": "i"
+  },
+  {
+    "country": "Haiti",
+    "continent": "North America",
+    "firstLetter": "h",
+    "lastLetter": "i"
+  },
+  {
+    "country": "Tonga",
+    "continent": "Oceania",
+    "firstLetter": "t",
+    "lastLetter": "a"
+  },
+  {
+    "country": "France",
+    "continent": "Europe",
+    "firstLetter": "f",
+    "lastLetter": "e"
+  },
+  {
+    "country": "Indonesia",
+    "continent": "Asia",
+    "firstLetter": "i",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Egypt",
+    "continent": "Africa",
+    "firstLetter": "e",
+    "lastLetter": "t"
+  },
+  {
+    "country": "Honduras",
+    "continent": "North America",
+    "firstLetter": "h",
+    "lastLetter": "s"
+  },
+  {
+    "country": "Tuvalu",
+    "continent": "Oceania",
+    "firstLetter": "t",
+    "lastLetter": "u"
+  },
+  {
+    "country": "Germany",
+    "continent": "Europe",
+    "firstLetter": "g",
+    "lastLetter": "y"
+  },
+  {
+    "country": "Iran",
+    "continent": "Asia",
+    "firstLetter": "i",
+    "lastLetter": "n"
+  },
+  {
+    "country": "Equatorial Guinea",
+    "continent": "Africa",
+    "firstLetter": "e",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Jamaica",
+    "continent": "North America",
+    "firstLetter": "j",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Vanuatu",
+    "continent": "Oceania",
+    "firstLetter": "v",
+    "lastLetter": "u"
+  },
+  {
+    "country": "Greece",
+    "continent": "Europe",
+    "firstLetter": "g",
+    "lastLetter": "e"
+  },
+  {
+    "country": "Iraq",
+    "continent": "Asia",
+    "firstLetter": "i",
+    "lastLetter": "q"
+  },
+  {
+    "country": "Eritrea",
+    "continent": "Africa",
+    "firstLetter": "e",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Mexico",
+    "continent": "North America",
+    "firstLetter": "m",
+    "lastLetter": "o"
+  },
+  {
+    "country": "Hungary",
+    "continent": "Europe",
+    "firstLetter": "h",
+    "lastLetter": "y"
+  },
+  {
+    "country": "Israel",
+    "continent": "Asia",
+    "firstLetter": "i",
+    "lastLetter": "l"
+  },
+  {
+    "country": "Eswatini",
+    "continent": "Africa",
+    "firstLetter": "e",
+    "lastLetter": "i"
+  },
+  {
+    "country": "Nicaragua",
+    "continent": "North America",
+    "firstLetter": "n",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Iceland",
+    "continent": "Europe",
+    "firstLetter": "i",
+    "lastLetter": "d"
+  },
+  {
+    "country": "Japan",
+    "continent": "Asia",
+    "firstLetter": "j",
+    "lastLetter": "n"
+  },
+  {
+    "country": "Ethiopia",
+    "continent": "Africa",
+    "firstLetter": "e",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Panama",
+    "continent": "North America",
+    "firstLetter": "p",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Ireland",
+    "continent": "Europe",
+    "firstLetter": "i",
+    "lastLetter": "d"
+  },
+  {
+    "country": "Jordan",
+    "continent": "Asia",
+    "firstLetter": "j",
+    "lastLetter": "n"
+  },
+  {
+    "country": "Gabon",
+    "continent": "Africa",
+    "firstLetter": "g",
+    "lastLetter": "n"
+  },
+  {
+    "country": "Saint Kitts and Nevis",
+    "continent": "North America",
+    "firstLetter": "s",
+    "lastLetter": "s"
+  },
+  {
+    "country": "Italy",
+    "continent": "Europe",
+    "firstLetter": "i",
+    "lastLetter": "y"
+  },
+  {
+    "country": "Kazakhstan",
+    "continent": "Asia",
+    "firstLetter": "k",
+    "lastLetter": "n"
+  },
+  {
+    "country": "Gambia",
+    "continent": "Africa",
+    "firstLetter": "g",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Saint Lucia",
+    "continent": "North America",
+    "firstLetter": "s",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Kosovo",
+    "continent": "Europe",
+    "firstLetter": "k",
+    "lastLetter": "o"
+  },
+  {
+    "country": "Kuwait",
+    "continent": "Asia",
+    "firstLetter": "k",
+    "lastLetter": "t"
+  },
+  {
+    "country": "Ghana",
+    "continent": "Africa",
+    "firstLetter": "g",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Saint Vincent and the",
+    "continent": "North America",
+    "firstLetter": "s",
+    "lastLetter": "e"
+  },
+  {
+    "country": "Latvia",
+    "continent": "Europe",
+    "firstLetter": "l",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Kyrgyzstan",
+    "continent": "Asia",
+    "firstLetter": "k",
+    "lastLetter": "n"
+  },
+  {
+    "country": "Guinea",
+    "continent": "Africa",
+    "firstLetter": "g",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Grenadines",
+    "continent": "North America",
+    "firstLetter": "g",
+    "lastLetter": "s"
+  },
+  {
+    "country": "Liechtenstein",
+    "continent": "Europe",
+    "firstLetter": "l",
+    "lastLetter": "n"
+  },
+  {
+    "country": "Laos",
+    "continent": "Asia",
+    "firstLetter": "l",
+    "lastLetter": "s"
+  },
+  {
+    "country": "Guinea-Bissau",
+    "continent": "Africa",
+    "firstLetter": "g",
+    "lastLetter": "u"
+  },
+  {
+    "country": "Trinidad and Tobago",
+    "continent": "North America",
+    "firstLetter": "t",
+    "lastLetter": "o"
+  },
+  {
+    "country": "Lithuania",
+    "continent": "Europe",
+    "firstLetter": "l",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Lebanon",
+    "continent": "Asia",
+    "firstLetter": "l",
+    "lastLetter": "n"
+  },
+  {
+    "country": "Ivory Coast",
+    "continent": "Africa",
+    "firstLetter": "i",
+    "lastLetter": "t"
+  },
+  {
+    "country": "United States",
+    "continent": "North America",
+    "firstLetter": "u",
+    "lastLetter": "s"
+  },
+  {
+    "country": "Luxembourg",
+    "continent": "Europe",
+    "firstLetter": "l",
+    "lastLetter": "g"
+  },
+  {
+    "country": "Malaysia",
+    "continent": "Asia",
+    "firstLetter": "m",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Kenya",
+    "continent": "Africa",
+    "firstLetter": "k",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Malta",
+    "continent": "Europe",
+    "firstLetter": "m",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Maldives",
+    "continent": "Asia",
+    "firstLetter": "m",
+    "lastLetter": "s"
+  },
+  {
+    "country": "Lesotho",
+    "continent": "Africa",
+    "firstLetter": "l",
+    "lastLetter": "o"
+  },
+  {
+    "country": "Moldova",
+    "continent": "Europe",
+    "firstLetter": "m",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Mongolia",
+    "continent": "Asia",
+    "firstLetter": "m",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Liberia",
+    "continent": "Africa",
+    "firstLetter": "l",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Monaco",
+    "continent": "Europe",
+    "firstLetter": "m",
+    "lastLetter": "o"
+  },
+  {
+    "country": "Myanmar",
+    "continent": "Asia",
+    "firstLetter": "m",
+    "lastLetter": "r"
+  },
+  {
+    "country": "Libya",
+    "continent": "Africa",
+    "firstLetter": "l",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Montenegro",
+    "continent": "Europe",
+    "firstLetter": "m",
+    "lastLetter": "o"
+  },
+  {
+    "country": "Nepal",
+    "continent": "Asia",
+    "firstLetter": "n",
+    "lastLetter": "l"
+  },
+  {
+    "country": "Madagascar",
+    "continent": "Africa",
+    "firstLetter": "m",
+    "lastLetter": "r"
+  },
+  {
+    "country": "Netherlands",
+    "continent": "Europe",
+    "firstLetter": "n",
+    "lastLetter": "s"
+  },
+  {
+    "country": "North Korea",
+    "continent": "Asia",
+    "firstLetter": "n",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Malawi",
+    "continent": "Africa",
+    "firstLetter": "m",
+    "lastLetter": "i"
+  },
+  {
+    "country": "North Macedonia",
+    "continent": "Europe",
+    "firstLetter": "n",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Oman",
+    "continent": "Asia",
+    "firstLetter": "o",
+    "lastLetter": "n"
+  },
+  {
+    "country": "Mali",
+    "continent": "Africa",
+    "firstLetter": "m",
+    "lastLetter": "i"
+  },
+  {
+    "country": "Norway",
+    "continent": "Europe",
+    "firstLetter": "n",
+    "lastLetter": "y"
+  },
+  {
+    "country": "Pakistan",
+    "continent": "Asia",
+    "firstLetter": "p",
+    "lastLetter": "n"
+  },
+  {
+    "country": "Mauritania",
+    "continent": "Africa",
+    "firstLetter": "m",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Poland",
+    "continent": "Europe",
+    "firstLetter": "p",
+    "lastLetter": "d"
+  },
+  {
+    "country": "Philippines",
+    "continent": "Asia",
+    "firstLetter": "p",
+    "lastLetter": "s"
+  },
+  {
+    "country": "Mauritius",
+    "continent": "Africa",
+    "firstLetter": "m",
+    "lastLetter": "s"
+  },
+  {
+    "country": "Portugal",
+    "continent": "Europe",
+    "firstLetter": "p",
+    "lastLetter": "l"
+  },
+  {
+    "country": "Qatar",
+    "continent": "Asia",
+    "firstLetter": "q",
+    "lastLetter": "r"
+  },
+  {
+    "country": "Morocco",
+    "continent": "Africa",
+    "firstLetter": "m",
+    "lastLetter": "o"
+  },
+  {
+    "country": "Romania",
+    "continent": "Europe",
+    "firstLetter": "r",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Saudi Arabia",
+    "continent": "Asia",
+    "firstLetter": "s",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Mozambique",
+    "continent": "Africa",
+    "firstLetter": "m",
+    "lastLetter": "e"
+  },
+  {
+    "country": "Russia",
+    "continent": "Europe",
+    "firstLetter": "r",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Singapore",
+    "continent": "Asia",
+    "firstLetter": "s",
+    "lastLetter": "e"
+  },
+  {
+    "country": "Namibia",
+    "continent": "Africa",
+    "firstLetter": "n",
+    "lastLetter": "a"
+  },
+  {
+    "country": "San Marino",
+    "continent": "Europe",
+    "firstLetter": "s",
+    "lastLetter": "o"
+  },
+  {
+    "country": "South Korea",
+    "continent": "Asia",
+    "firstLetter": "s",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Niger",
+    "continent": "Africa",
+    "firstLetter": "n",
+    "lastLetter": "r"
+  },
+  {
+    "country": "Serbia",
+    "continent": "Europe",
+    "firstLetter": "s",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Sri Lanka",
+    "continent": "Asia",
+    "firstLetter": "s",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Nigeria",
+    "continent": "Africa",
+    "firstLetter": "n",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Slovakia",
+    "continent": "Europe",
+    "firstLetter": "s",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Syria",
+    "continent": "Asia",
+    "firstLetter": "s",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Republic of the Congo",
+    "continent": "Africa",
+    "firstLetter": "r",
+    "lastLetter": "o"
+  },
+  {
+    "country": "Slovenia",
+    "continent": "Europe",
+    "firstLetter": "s",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Taiwan",
+    "continent": "Asia",
+    "firstLetter": "t",
+    "lastLetter": "n"
+  },
+  {
+    "country": "Rwanda",
+    "continent": "Africa",
+    "firstLetter": "r",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Spain",
+    "continent": "Europe",
+    "firstLetter": "s",
+    "lastLetter": "n"
+  },
+  {
+    "country": "Tajikistan",
+    "continent": "Asia",
+    "firstLetter": "t",
+    "lastLetter": "n"
+  },
+  {
+    "country": "São Tomé and Príncipe",
+    "continent": "Africa",
+    "firstLetter": "s",
+    "lastLetter": "e"
+  },
+  {
+    "country": "Sweden",
+    "continent": "Europe",
+    "firstLetter": "s",
+    "lastLetter": "n"
+  },
+  {
+    "country": "Thailand",
+    "continent": "Asia",
+    "firstLetter": "t",
+    "lastLetter": "d"
+  },
+  {
+    "country": "Senegal",
+    "continent": "Africa",
+    "firstLetter": "s",
+    "lastLetter": "l"
+  },
+  {
+    "country": "Switzerland",
+    "continent": "Europe",
+    "firstLetter": "s",
+    "lastLetter": "d"
+  },
+  {
+    "country": "Turkey",
+    "continent": "Asia",
+    "firstLetter": "t",
+    "lastLetter": "y"
+  },
+  {
+    "country": "Seychelles",
+    "continent": "Africa",
+    "firstLetter": "s",
+    "lastLetter": "s"
+  },
+  {
+    "country": "Ukraine",
+    "continent": "Europe",
+    "firstLetter": "u",
+    "lastLetter": "e"
+  },
+  {
+    "country": "Turkmenistan",
+    "continent": "Asia",
+    "firstLetter": "t",
+    "lastLetter": "n"
+  },
+  {
+    "country": "Sierra Leone",
+    "continent": "Africa",
+    "firstLetter": "s",
+    "lastLetter": "e"
+  },
+  {
+    "country": "United Kingdom",
+    "continent": "Europe",
+    "firstLetter": "u",
+    "lastLetter": "m"
+  },
+  {
+    "country": "United Arab Emirates",
+    "continent": "Asia",
+    "firstLetter": "u",
+    "lastLetter": "s"
+  },
+  {
+    "country": "Somalia",
+    "continent": "Africa",
+    "firstLetter": "s",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Vatican City",
+    "continent": "Europe",
+    "firstLetter": "v",
+    "lastLetter": "y"
+  },
+  {
+    "country": "Uzbekistan",
+    "continent": "Asia",
+    "firstLetter": "u",
+    "lastLetter": "n"
+  },
+  {
+    "country": "South Africa",
+    "continent": "Africa",
+    "firstLetter": "s",
+    "lastLetter": "a"
+  },
+  {
+    "country": "South Sudan",
+    "continent": "Africa",
+    "firstLetter": "s",
+    "lastLetter": "n"
+  },
+  {
+    "country": "Sudan",
+    "continent": "Africa",
+    "firstLetter": "s",
+    "lastLetter": "n"
+  },
+  {
+    "country": "Tanzania",
+    "continent": "Africa",
+    "firstLetter": "t",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Togo",
+    "continent": "Africa",
+    "firstLetter": "t",
+    "lastLetter": "o"
+  },
+  {
+    "country": "Tunisia",
+    "continent": "Africa",
+    "firstLetter": "t",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Uganda",
+    "continent": "Africa",
+    "firstLetter": "u",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Zambia",
+    "continent": "Africa",
+    "firstLetter": "z",
+    "lastLetter": "a"
+  },
+  {
+    "country": "Zimbabwe",
+    "continent": "Africa",
+    "firstLetter": "z",
+    "lastLetter": "e"
+  }
 ]
