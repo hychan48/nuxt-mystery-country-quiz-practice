@@ -18,13 +18,38 @@
           </span>
         </v-card-title>
         <v-card-text>
+          <v-text-field
+            solo hide-details clearable
+            placeholder="search"
+            v-model="tableSearch"
+          />
+          <v-text-field
+            solo hide-details clearable
+            placeholder="Continent"
+            v-model="continentFilter"
+          />
+          <v-text-field
+            solo hide-details clearable
+            placeholder="firstLetterFilter"
+            v-model="firstLetterFilter"
+          />
+          <v-text-field
+            solo hide-details clearable
+            placeholder="lastLetterFilter"
+            v-model="lastLetterFilter"
+          />
 
           <v-data-table
             :headers="tableHeaders"
-            :items="mysteryCountryFormat"
+            :items="tableItems"
             :items-per-page="15"
             class="elevation-1"
-          ></v-data-table>
+            :search="tableSearch"
+          >
+
+
+
+          </v-data-table>
           <!--            {{ CountryHeaders }}-->
           <!--            {{ mysteryCountryFormat }}-->
         </v-card-text>
@@ -37,6 +62,15 @@ const CountryHeaders = ["Europe","Asia","Africa",'North America','South America'
 import mysteryCountryFormat from "~/dev/mysteryCountryFormat.json"
 export default {
   name:'indexPage',
+  data() {
+    return {
+      tableSearch: "",
+      continentFilter: "",
+      firstLetterFilter:"",
+      lastLetterFilter:"",
+
+    }
+  },
   computed:{
     mysteryCountryFormat(){
       return mysteryCountryFormat;
@@ -71,7 +105,31 @@ export default {
       //   };
       // })
 
-    }
+    },
+    tableItems(){
+      const that = this;
+      return this.mysteryCountryFormat.filter(oData =>{
+        const {country, continent, firstLetter,lastLetter} = oData;
+        let toShow = true;
+        //lazy chain
+        if(that.continentFilter){
+          toShow = toShow &&continent.toLowerCase().includes(that.continentFilter.toLowerCase())
+        }
+        if(that.firstLetterFilter){
+          toShow = toShow &&firstLetter.includes(that.firstLetterFilter)
+        }
+        if(that.lastLetterFilter){
+          toShow = toShow &&lastLetter.includes(that.lastLetterFilter)
+        }
+
+
+
+        return toShow;
+
+
+      });
+
+    },
 
   },
 
