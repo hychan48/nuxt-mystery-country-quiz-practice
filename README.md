@@ -12,7 +12,8 @@ https://www.jetpunk.com/quizzes/how-many-countries-can-you-name
 
 # potential improvements / optimizations
 * LandMass is currently kinda ignored.
-* None should get rid of continents Africa, Asia, 
+* None should get rid of continents Africa, Asia,
+  * maybe just hardcode some logic for none / landmass for The largest countries. + france. since they have special meaning 
 * France is special. Belongs to both sides of the world
 * look at static/improvements/landmass_comments.jpg
 
