@@ -101,6 +101,8 @@ describe('dataTransformer', function(){
             continent:headerKey,
             firstLetter:countryJ[0].toLowerCase(),
             lastLetter:countryJ[countryJ.length - 1],
+
+            //todo maybe do count of firstLetter and lastLetter
           })
         }
 

@@ -4,6 +4,11 @@
 https://www.jetpunk.com/user-quizzes/1260664/find-the-mystery-country-using-color-clues-randomized
 https://www.jetpunk.com/quizzes/how-many-countries-can-you-name
 
+# bugged country
+Herzegovina
+under bosnia maybe... double check
+soo i might be missing a country?
+Herzegovina is in europe right now...
 
 ## Build Setup
 
