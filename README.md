@@ -14,6 +14,7 @@ https://www.jetpunk.com/quizzes/how-many-countries-can-you-name
 * LandMass is currently kinda ignored.
 * None should get rid of continents Africa, Asia, 
 * France is special. Belongs to both sides of the world
+* look at static/improvements/landmass_comments.jpg
 
 # bugged country
 Nigeria -> Niger auto completion. so the last letter is bugged
