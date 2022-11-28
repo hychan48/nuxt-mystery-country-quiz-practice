@@ -296,6 +296,14 @@ export default {
     largeCountries(){
       return [
         {
+          "country": "Samoa",
+          "continent": "Oceania",
+          "firstLetter": "s",
+          "lastLetter": "a",
+          "firstLetterCount": 26,
+          "lastLetterCount": 73
+        },
+        {
           "country": "Canada",
           "continent": "North America",
           "firstLetter": "c",
@@ -334,7 +342,10 @@ export default {
 
       ].filter(this.tableFilter)
     },
-    /** mystery game colors handler */
+    /** mystery game colors handler
+     * can be cleaned up to clean up the logic of exclusion and for performance
+     *
+     * */
     gameStateLookupItems() {
       const that = this;
 
@@ -463,6 +474,8 @@ export default {
           handler: function () {
             fl();
             ll();
+            that.continentFilterExclude.push(that.lastGameState.continent);
+            that.continentFilterExclude = uniq(that.continentFilterExclude);
             gameStatesHandlerAtEnd()          },
           label: "FL LL",
         },
@@ -472,6 +485,8 @@ export default {
           handler: function () {
             fl();
             co();
+            that.lastLetterFilterExclude.push(that.lastGameState.lastLetter);
+            that.lastLetterFilterExclude = uniq(that.lastLetterFilterExclude);
             gameStatesHandlerAtEnd()          },
           label: "FL CO",
         },
