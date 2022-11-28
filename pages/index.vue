@@ -495,8 +495,7 @@ export default {
           color: "rgb(255, 255, 0)",
           handler: function () {
             la_lm();
-            that.lastGameState = {};
-          },
+            gameStatesHandlerAtEnd()           },
           label: "LM",
           class:"black--text",
         },
