@@ -133,7 +133,7 @@
               @click="item.handler"
               :disabled="!lastGameState.country"
               v-text="item.label"
-
+              :class="item.class"
 
             ></v-btn>
 
@@ -397,6 +397,15 @@ export default {
 
 
       const colorLookup = [
+        //skip
+        {
+          color: "rgb(37,57,93)",
+          handler: function () {
+
+            gameStatesHandlerAtEnd()
+          },
+          label: "SKIP",
+        },
         //fl
         {
           color: "rgb(0, 255, 0)",
@@ -410,6 +419,8 @@ export default {
             gameStatesHandlerAtEnd()
           },
           label: "FL",
+          class:"black--text",
+
         },
         //ll
         {
@@ -444,6 +455,7 @@ export default {
             that.lastGameState = {};
           },
           label: "LM",
+          class:"black--text",
         },
         //fl + ll
         {
@@ -491,6 +503,8 @@ export default {
             gameStatesHandlerAtEnd()
           },
           label: "LL LM",
+          class:"black--text",
+
         },
         //fl ll co
         {
@@ -522,7 +536,10 @@ export default {
             gameStatesHandlerAtEnd()
           },
           label: "NONE",
+          class:"black--text",
         },
+
+
 
       ]
 

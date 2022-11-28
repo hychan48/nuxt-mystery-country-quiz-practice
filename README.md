@@ -5,12 +5,7 @@ https://www.jetpunk.com/user-quizzes/1260664/find-the-mystery-country-using-colo
 https://www.jetpunk.com/quizzes/how-many-countries-can-you-name
 
 # bugged country
-Herzegovina
-under bosnia maybe... double check
-soo i might be missing a country?
-Herzegovina is in europe right now...
-
-vietnam and yemen?
+Nigeria -> Niger auto completion. so the last letter is bugged
 
 ## Build Setup
 
