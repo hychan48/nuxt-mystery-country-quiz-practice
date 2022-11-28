@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.12.1",
+    "lodash.countby": "^4.6.0",
     "mocha": "^10.1.0",
     "push-dir": "^0.4.1"
   }

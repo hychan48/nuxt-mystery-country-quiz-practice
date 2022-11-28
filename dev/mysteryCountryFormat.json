@@ -3,1176 +3,1568 @@
     "country": "Albania",
     "continent": "Europe",
     "firstLetter": "a",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 11,
+    "lastLetterCount": 73
   },
   {
     "country": "Afghanistan",
     "continent": "Asia",
     "firstLetter": "a",
-    "lastLetter": "n"
+    "lastLetter": "n",
+    "firstLetterCount": 11,
+    "lastLetterCount": 25
   },
   {
     "country": "Algeria",
     "continent": "Africa",
     "firstLetter": "a",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 11,
+    "lastLetterCount": 73
   },
   {
     "country": "Antigua and Barbuda",
     "continent": "North America",
     "firstLetter": "a",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 11,
+    "lastLetterCount": 73
   },
   {
     "country": "Argentina",
     "continent": "South America",
     "firstLetter": "a",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 11,
+    "lastLetterCount": 73
   },
   {
     "country": "Australia",
     "continent": "Oceania",
     "firstLetter": "a",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 11,
+    "lastLetterCount": 73
   },
   {
     "country": "Andorra",
     "continent": "Europe",
     "firstLetter": "a",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 11,
+    "lastLetterCount": 73
   },
   {
     "country": "Armenia",
     "continent": "Asia",
     "firstLetter": "a",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 11,
+    "lastLetterCount": 73
   },
   {
     "country": "Angola",
     "continent": "Africa",
     "firstLetter": "a",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 11,
+    "lastLetterCount": 73
   },
   {
     "country": "Bahamas",
     "continent": "North America",
     "firstLetter": "b",
-    "lastLetter": "s"
+    "lastLetter": "s",
+    "firstLetterCount": 17,
+    "lastLetterCount": 18
   },
   {
     "country": "Bolivia",
     "continent": "South America",
     "firstLetter": "b",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 17,
+    "lastLetterCount": 73
   },
   {
     "country": "Federated States of Micronesia",
     "continent": "Oceania",
     "firstLetter": "f",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 4,
+    "lastLetterCount": 73
   },
   {
     "country": "Austria",
     "continent": "Europe",
     "firstLetter": "a",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 11,
+    "lastLetterCount": 73
   },
   {
     "country": "Azerbaijan",
     "continent": "Asia",
     "firstLetter": "a",
-    "lastLetter": "n"
+    "lastLetter": "n",
+    "firstLetterCount": 11,
+    "lastLetterCount": 25
   },
   {
     "country": "Benin",
     "continent": "Africa",
     "firstLetter": "b",
-    "lastLetter": "n"
+    "lastLetter": "n",
+    "firstLetterCount": 17,
+    "lastLetterCount": 25
   },
   {
     "country": "Barbados",
     "continent": "North America",
     "firstLetter": "b",
-    "lastLetter": "s"
+    "lastLetter": "s",
+    "firstLetterCount": 17,
+    "lastLetterCount": 18
   },
   {
     "country": "Brazil",
     "continent": "South America",
     "firstLetter": "b",
-    "lastLetter": "l"
+    "lastLetter": "l",
+    "firstLetterCount": 17,
+    "lastLetterCount": 5
   },
   {
     "country": "Belarus",
     "continent": "Europe",
     "firstLetter": "b",
-    "lastLetter": "s"
+    "lastLetter": "s",
+    "firstLetterCount": 17,
+    "lastLetterCount": 18
   },
   {
     "country": "Bahrain",
     "continent": "Asia",
     "firstLetter": "b",
-    "lastLetter": "n"
+    "lastLetter": "n",
+    "firstLetterCount": 17,
+    "lastLetterCount": 25
   },
   {
     "country": "Botswana",
     "continent": "Africa",
     "firstLetter": "b",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 17,
+    "lastLetterCount": 73
   },
   {
     "country": "Belize",
     "continent": "North America",
     "firstLetter": "b",
-    "lastLetter": "e"
+    "lastLetter": "e",
+    "firstLetterCount": 17,
+    "lastLetterCount": 12
   },
   {
     "country": "Chile",
     "continent": "South America",
     "firstLetter": "c",
-    "lastLetter": "e"
+    "lastLetter": "e",
+    "firstLetterCount": 15,
+    "lastLetterCount": 12
   },
   {
     "country": "Fiji",
     "continent": "Oceania",
     "firstLetter": "f",
-    "lastLetter": "i"
+    "lastLetter": "i",
+    "firstLetterCount": 4,
+    "lastLetterCount": 9
   },
   {
     "country": "Belgium",
     "continent": "Europe",
     "firstLetter": "b",
-    "lastLetter": "m"
+    "lastLetter": "m",
+    "firstLetterCount": 17,
+    "lastLetterCount": 3
   },
   {
     "country": "Bangladesh",
     "continent": "Asia",
     "firstLetter": "b",
-    "lastLetter": "h"
+    "lastLetter": "h",
+    "firstLetterCount": 17,
+    "lastLetterCount": 1
   },
   {
     "country": "Burkina Faso",
     "continent": "Africa",
     "firstLetter": "b",
-    "lastLetter": "o"
+    "lastLetter": "o",
+    "firstLetterCount": 17,
+    "lastLetterCount": 12
   },
   {
     "country": "Canada",
     "continent": "North America",
     "firstLetter": "c",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 15,
+    "lastLetterCount": 73
   },
   {
     "country": "Colombia",
     "continent": "South America",
     "firstLetter": "c",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 15,
+    "lastLetterCount": 73
   },
   {
     "country": "Kiribati",
     "continent": "Oceania",
     "firstLetter": "k",
-    "lastLetter": "i"
+    "lastLetter": "i",
+    "firstLetterCount": 6,
+    "lastLetterCount": 9
   },
   {
     "country": "Bosnia and Herzegovina",
     "continent": "Europe",
     "firstLetter": "b",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 17,
+    "lastLetterCount": 73
   },
   {
     "country": "Bhutan",
     "continent": "Asia",
     "firstLetter": "b",
-    "lastLetter": "n"
+    "lastLetter": "n",
+    "firstLetterCount": 17,
+    "lastLetterCount": 25
   },
   {
     "country": "Burundi",
     "continent": "Africa",
     "firstLetter": "b",
-    "lastLetter": "i"
+    "lastLetter": "i",
+    "firstLetterCount": 17,
+    "lastLetterCount": 9
   },
   {
     "country": "Costa Rica",
     "continent": "North America",
     "firstLetter": "c",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 15,
+    "lastLetterCount": 73
   },
   {
     "country": "Ecuador",
     "continent": "South America",
     "firstLetter": "e",
-    "lastLetter": "r"
+    "lastLetter": "r",
+    "firstLetterCount": 9,
+    "lastLetterCount": 7
   },
   {
     "country": "Marshall Islands",
     "continent": "Oceania",
     "firstLetter": "m",
-    "lastLetter": "s"
+    "lastLetter": "s",
+    "firstLetterCount": 17,
+    "lastLetterCount": 18
   },
   {
     "country": "Brunei",
     "continent": "Asia",
     "firstLetter": "b",
-    "lastLetter": "i"
+    "lastLetter": "i",
+    "firstLetterCount": 17,
+    "lastLetterCount": 9
   },
   {
     "country": "Cameroon",
     "continent": "Africa",
     "firstLetter": "c",
-    "lastLetter": "n"
+    "lastLetter": "n",
+    "firstLetterCount": 15,
+    "lastLetterCount": 25
   },
   {
     "country": "Cuba",
     "continent": "North America",
     "firstLetter": "c",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 15,
+    "lastLetterCount": 73
   },
   {
     "country": "Guyana",
     "continent": "South America",
     "firstLetter": "g",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 11,
+    "lastLetterCount": 73
   },
   {
     "country": "Nauru",
     "continent": "Oceania",
     "firstLetter": "n",
-    "lastLetter": "u"
+    "lastLetter": "u",
+    "firstLetterCount": 11,
+    "lastLetterCount": 6
   },
   {
     "country": "Bulgaria",
     "continent": "Europe",
     "firstLetter": "b",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 17,
+    "lastLetterCount": 73
   },
   {
     "country": "Cambodia",
     "continent": "Asia",
     "firstLetter": "c",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 15,
+    "lastLetterCount": 73
   },
   {
     "country": "Cape Verde",
     "continent": "Africa",
     "firstLetter": "c",
-    "lastLetter": "e"
+    "lastLetter": "e",
+    "firstLetterCount": 15,
+    "lastLetterCount": 12
   },
   {
     "country": "Dominica",
     "continent": "North America",
     "firstLetter": "d",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 5,
+    "lastLetterCount": 73
   },
   {
     "country": "Paraguay",
     "continent": "South America",
     "firstLetter": "p",
-    "lastLetter": "y"
+    "lastLetter": "y",
+    "firstLetterCount": 9,
+    "lastLetterCount": 8
   },
   {
     "country": "New Zealand",
     "continent": "Oceania",
     "firstLetter": "n",
-    "lastLetter": "d"
+    "lastLetter": "d",
+    "firstLetterCount": 11,
+    "lastLetterCount": 8
   },
   {
     "country": "Croatia",
     "continent": "Europe",
     "firstLetter": "c",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 15,
+    "lastLetterCount": 73
   },
   {
     "country": "China",
     "continent": "Asia",
     "firstLetter": "c",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 15,
+    "lastLetterCount": 73
   },
   {
     "country": "Central African Republic",
     "continent": "Africa",
     "firstLetter": "c",
-    "lastLetter": "c"
+    "lastLetter": "c",
+    "firstLetterCount": 15,
+    "lastLetterCount": 3
   },
   {
     "country": "Dominican Republic",
     "continent": "North America",
     "firstLetter": "d",
-    "lastLetter": "c"
+    "lastLetter": "c",
+    "firstLetterCount": 5,
+    "lastLetterCount": 3
   },
   {
     "country": "Peru",
     "continent": "South America",
     "firstLetter": "p",
-    "lastLetter": "u"
+    "lastLetter": "u",
+    "firstLetterCount": 9,
+    "lastLetterCount": 6
   },
   {
     "country": "Palau",
     "continent": "Oceania",
     "firstLetter": "p",
-    "lastLetter": "u"
+    "lastLetter": "u",
+    "firstLetterCount": 9,
+    "lastLetterCount": 6
   },
   {
     "country": "Czech Republic",
     "continent": "Europe",
     "firstLetter": "c",
-    "lastLetter": "c"
+    "lastLetter": "c",
+    "firstLetterCount": 15,
+    "lastLetterCount": 3
   },
   {
     "country": "Cyprus",
     "continent": "Asia",
     "firstLetter": "c",
-    "lastLetter": "s"
+    "lastLetter": "s",
+    "firstLetterCount": 15,
+    "lastLetterCount": 18
   },
   {
     "country": "Chad",
     "continent": "Africa",
     "firstLetter": "c",
-    "lastLetter": "d"
+    "lastLetter": "d",
+    "firstLetterCount": 15,
+    "lastLetterCount": 8
   },
   {
     "country": "El Salvador",
     "continent": "North America",
     "firstLetter": "e",
-    "lastLetter": "r"
+    "lastLetter": "r",
+    "firstLetterCount": 9,
+    "lastLetterCount": 7
   },
   {
     "country": "Suriname",
     "continent": "South America",
     "firstLetter": "s",
-    "lastLetter": "e"
+    "lastLetter": "e",
+    "firstLetterCount": 26,
+    "lastLetterCount": 12
   },
   {
     "country": "Papua New Guinea",
     "continent": "Oceania",
     "firstLetter": "p",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 9,
+    "lastLetterCount": 73
   },
   {
     "country": "Denmark",
     "continent": "Europe",
     "firstLetter": "d",
-    "lastLetter": "k"
+    "lastLetter": "k",
+    "firstLetterCount": 5,
+    "lastLetterCount": 1
   },
   {
     "country": "East Timor",
     "continent": "Asia",
     "firstLetter": "e",
-    "lastLetter": "r"
+    "lastLetter": "r",
+    "firstLetterCount": 9,
+    "lastLetterCount": 7
   },
   {
     "country": "Comoros",
     "continent": "Africa",
     "firstLetter": "c",
-    "lastLetter": "s"
+    "lastLetter": "s",
+    "firstLetterCount": 15,
+    "lastLetterCount": 18
   },
   {
     "country": "Grenada",
     "continent": "North America",
     "firstLetter": "g",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 11,
+    "lastLetterCount": 73
   },
   {
     "country": "Uruguay",
     "continent": "South America",
     "firstLetter": "u",
-    "lastLetter": "y"
+    "lastLetter": "y",
+    "firstLetterCount": 7,
+    "lastLetterCount": 8
   },
   {
     "country": "Samoa",
     "continent": "Oceania",
     "firstLetter": "s",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 26,
+    "lastLetterCount": 73
   },
   {
     "country": "Estonia",
     "continent": "Europe",
     "firstLetter": "e",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 9,
+    "lastLetterCount": 73
   },
   {
     "country": "Georgia",
     "continent": "Asia",
     "firstLetter": "g",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 11,
+    "lastLetterCount": 73
   },
   {
     "country": "Democratic Republic of the Congo",
     "continent": "Africa",
     "firstLetter": "d",
-    "lastLetter": "o"
+    "lastLetter": "o",
+    "firstLetterCount": 5,
+    "lastLetterCount": 12
   },
   {
     "country": "Guatemala",
     "continent": "North America",
     "firstLetter": "g",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 11,
+    "lastLetterCount": 73
   },
   {
     "country": "Venezuela",
     "continent": "South America",
     "firstLetter": "v",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 4,
+    "lastLetterCount": 73
   },
   {
     "country": "Solomon Islands",
     "continent": "Oceania",
     "firstLetter": "s",
-    "lastLetter": "s"
+    "lastLetter": "s",
+    "firstLetterCount": 26,
+    "lastLetterCount": 18
   },
   {
     "country": "Finland",
     "continent": "Europe",
     "firstLetter": "f",
-    "lastLetter": "d"
+    "lastLetter": "d",
+    "firstLetterCount": 4,
+    "lastLetterCount": 8
   },
   {
     "country": "India",
     "continent": "Asia",
     "firstLetter": "i",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 9,
+    "lastLetterCount": 73
   },
   {
     "country": "Djibouti",
     "continent": "Africa",
     "firstLetter": "d",
-    "lastLetter": "i"
+    "lastLetter": "i",
+    "firstLetterCount": 5,
+    "lastLetterCount": 9
   },
   {
     "country": "Haiti",
     "continent": "North America",
     "firstLetter": "h",
-    "lastLetter": "i"
+    "lastLetter": "i",
+    "firstLetterCount": 3,
+    "lastLetterCount": 9
   },
   {
     "country": "Tonga",
     "continent": "Oceania",
     "firstLetter": "t",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 11,
+    "lastLetterCount": 73
   },
   {
     "country": "France",
     "continent": "Europe",
     "firstLetter": "f",
-    "lastLetter": "e"
+    "lastLetter": "e",
+    "firstLetterCount": 4,
+    "lastLetterCount": 12
   },
   {
     "country": "Indonesia",
     "continent": "Asia",
     "firstLetter": "i",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 9,
+    "lastLetterCount": 73
   },
   {
     "country": "Egypt",
     "continent": "Africa",
     "firstLetter": "e",
-    "lastLetter": "t"
+    "lastLetter": "t",
+    "firstLetterCount": 9,
+    "lastLetterCount": 3
   },
   {
     "country": "Honduras",
     "continent": "North America",
     "firstLetter": "h",
-    "lastLetter": "s"
+    "lastLetter": "s",
+    "firstLetterCount": 3,
+    "lastLetterCount": 18
   },
   {
     "country": "Tuvalu",
     "continent": "Oceania",
     "firstLetter": "t",
-    "lastLetter": "u"
+    "lastLetter": "u",
+    "firstLetterCount": 11,
+    "lastLetterCount": 6
   },
   {
     "country": "Germany",
     "continent": "Europe",
     "firstLetter": "g",
-    "lastLetter": "y"
+    "lastLetter": "y",
+    "firstLetterCount": 11,
+    "lastLetterCount": 8
   },
   {
     "country": "Iran",
     "continent": "Asia",
     "firstLetter": "i",
-    "lastLetter": "n"
+    "lastLetter": "n",
+    "firstLetterCount": 9,
+    "lastLetterCount": 25
   },
   {
     "country": "Equatorial Guinea",
     "continent": "Africa",
     "firstLetter": "e",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 9,
+    "lastLetterCount": 73
   },
   {
     "country": "Jamaica",
     "continent": "North America",
     "firstLetter": "j",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 3,
+    "lastLetterCount": 73
   },
   {
     "country": "Vanuatu",
     "continent": "Oceania",
     "firstLetter": "v",
-    "lastLetter": "u"
+    "lastLetter": "u",
+    "firstLetterCount": 4,
+    "lastLetterCount": 6
   },
   {
     "country": "Greece",
     "continent": "Europe",
     "firstLetter": "g",
-    "lastLetter": "e"
+    "lastLetter": "e",
+    "firstLetterCount": 11,
+    "lastLetterCount": 12
   },
   {
     "country": "Iraq",
     "continent": "Asia",
     "firstLetter": "i",
-    "lastLetter": "q"
+    "lastLetter": "q",
+    "firstLetterCount": 9,
+    "lastLetterCount": 1
   },
   {
     "country": "Eritrea",
     "continent": "Africa",
     "firstLetter": "e",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 9,
+    "lastLetterCount": 73
   },
   {
     "country": "Mexico",
     "continent": "North America",
     "firstLetter": "m",
-    "lastLetter": "o"
+    "lastLetter": "o",
+    "firstLetterCount": 17,
+    "lastLetterCount": 12
   },
   {
     "country": "Hungary",
     "continent": "Europe",
     "firstLetter": "h",
-    "lastLetter": "y"
+    "lastLetter": "y",
+    "firstLetterCount": 3,
+    "lastLetterCount": 8
   },
   {
     "country": "Israel",
     "continent": "Asia",
     "firstLetter": "i",
-    "lastLetter": "l"
+    "lastLetter": "l",
+    "firstLetterCount": 9,
+    "lastLetterCount": 5
   },
   {
     "country": "Eswatini",
     "continent": "Africa",
     "firstLetter": "e",
-    "lastLetter": "i"
+    "lastLetter": "i",
+    "firstLetterCount": 9,
+    "lastLetterCount": 9
   },
   {
     "country": "Nicaragua",
     "continent": "North America",
     "firstLetter": "n",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 11,
+    "lastLetterCount": 73
   },
   {
     "country": "Iceland",
     "continent": "Europe",
     "firstLetter": "i",
-    "lastLetter": "d"
+    "lastLetter": "d",
+    "firstLetterCount": 9,
+    "lastLetterCount": 8
   },
   {
     "country": "Japan",
     "continent": "Asia",
     "firstLetter": "j",
-    "lastLetter": "n"
+    "lastLetter": "n",
+    "firstLetterCount": 3,
+    "lastLetterCount": 25
   },
   {
     "country": "Ethiopia",
     "continent": "Africa",
     "firstLetter": "e",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 9,
+    "lastLetterCount": 73
   },
   {
     "country": "Panama",
     "continent": "North America",
     "firstLetter": "p",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 9,
+    "lastLetterCount": 73
   },
   {
     "country": "Ireland",
     "continent": "Europe",
     "firstLetter": "i",
-    "lastLetter": "d"
+    "lastLetter": "d",
+    "firstLetterCount": 9,
+    "lastLetterCount": 8
   },
   {
     "country": "Jordan",
     "continent": "Asia",
     "firstLetter": "j",
-    "lastLetter": "n"
+    "lastLetter": "n",
+    "firstLetterCount": 3,
+    "lastLetterCount": 25
   },
   {
     "country": "Gabon",
     "continent": "Africa",
     "firstLetter": "g",
-    "lastLetter": "n"
+    "lastLetter": "n",
+    "firstLetterCount": 11,
+    "lastLetterCount": 25
   },
   {
     "country": "Saint Kitts and Nevis",
     "continent": "North America",
     "firstLetter": "s",
-    "lastLetter": "s"
+    "lastLetter": "s",
+    "firstLetterCount": 26,
+    "lastLetterCount": 18
   },
   {
     "country": "Italy",
     "continent": "Europe",
     "firstLetter": "i",
-    "lastLetter": "y"
+    "lastLetter": "y",
+    "firstLetterCount": 9,
+    "lastLetterCount": 8
   },
   {
     "country": "Kazakhstan",
     "continent": "Asia",
     "firstLetter": "k",
-    "lastLetter": "n"
+    "lastLetter": "n",
+    "firstLetterCount": 6,
+    "lastLetterCount": 25
   },
   {
     "country": "Gambia",
     "continent": "Africa",
     "firstLetter": "g",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 11,
+    "lastLetterCount": 73
   },
   {
     "country": "Saint Lucia",
     "continent": "North America",
     "firstLetter": "s",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 26,
+    "lastLetterCount": 73
   },
   {
     "country": "Kosovo",
     "continent": "Europe",
     "firstLetter": "k",
-    "lastLetter": "o"
+    "lastLetter": "o",
+    "firstLetterCount": 6,
+    "lastLetterCount": 12
   },
   {
     "country": "Kuwait",
     "continent": "Asia",
     "firstLetter": "k",
-    "lastLetter": "t"
+    "lastLetter": "t",
+    "firstLetterCount": 6,
+    "lastLetterCount": 3
   },
   {
     "country": "Ghana",
     "continent": "Africa",
     "firstLetter": "g",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 11,
+    "lastLetterCount": 73
   },
   {
     "country": "Saint Vincent and the Grenadines",
     "continent": "North America",
     "firstLetter": "s",
-    "lastLetter": "s"
+    "lastLetter": "s",
+    "firstLetterCount": 26,
+    "lastLetterCount": 18
   },
   {
     "country": "Latvia",
     "continent": "Europe",
     "firstLetter": "l",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 9,
+    "lastLetterCount": 73
   },
   {
     "country": "Kyrgyzstan",
     "continent": "Asia",
     "firstLetter": "k",
-    "lastLetter": "n"
+    "lastLetter": "n",
+    "firstLetterCount": 6,
+    "lastLetterCount": 25
   },
   {
     "country": "Guinea",
     "continent": "Africa",
     "firstLetter": "g",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 11,
+    "lastLetterCount": 73
   },
   {
     "country": "Liechtenstein",
     "continent": "Europe",
     "firstLetter": "l",
-    "lastLetter": "n"
+    "lastLetter": "n",
+    "firstLetterCount": 9,
+    "lastLetterCount": 25
   },
   {
     "country": "Laos",
     "continent": "Asia",
     "firstLetter": "l",
-    "lastLetter": "s"
+    "lastLetter": "s",
+    "firstLetterCount": 9,
+    "lastLetterCount": 18
   },
   {
     "country": "Guinea-Bissau",
     "continent": "Africa",
     "firstLetter": "g",
-    "lastLetter": "u"
+    "lastLetter": "u",
+    "firstLetterCount": 11,
+    "lastLetterCount": 6
   },
   {
     "country": "Trinidad and Tobago",
     "continent": "North America",
     "firstLetter": "t",
-    "lastLetter": "o"
+    "lastLetter": "o",
+    "firstLetterCount": 11,
+    "lastLetterCount": 12
   },
   {
     "country": "Lithuania",
     "continent": "Europe",
     "firstLetter": "l",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 9,
+    "lastLetterCount": 73
   },
   {
     "country": "Lebanon",
     "continent": "Asia",
     "firstLetter": "l",
-    "lastLetter": "n"
+    "lastLetter": "n",
+    "firstLetterCount": 9,
+    "lastLetterCount": 25
   },
   {
     "country": "Ivory Coast",
     "continent": "Africa",
     "firstLetter": "i",
-    "lastLetter": "t"
+    "lastLetter": "t",
+    "firstLetterCount": 9,
+    "lastLetterCount": 3
   },
   {
     "country": "United States",
     "continent": "North America",
     "firstLetter": "u",
-    "lastLetter": "s"
+    "lastLetter": "s",
+    "firstLetterCount": 7,
+    "lastLetterCount": 18
   },
   {
     "country": "Luxembourg",
     "continent": "Europe",
     "firstLetter": "l",
-    "lastLetter": "g"
+    "lastLetter": "g",
+    "firstLetterCount": 9,
+    "lastLetterCount": 1
   },
   {
     "country": "Malaysia",
     "continent": "Asia",
     "firstLetter": "m",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 17,
+    "lastLetterCount": 73
   },
   {
     "country": "Kenya",
     "continent": "Africa",
     "firstLetter": "k",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 6,
+    "lastLetterCount": 73
   },
   {
     "country": "Malta",
     "continent": "Europe",
     "firstLetter": "m",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 17,
+    "lastLetterCount": 73
   },
   {
     "country": "Maldives",
     "continent": "Asia",
     "firstLetter": "m",
-    "lastLetter": "s"
+    "lastLetter": "s",
+    "firstLetterCount": 17,
+    "lastLetterCount": 18
   },
   {
     "country": "Lesotho",
     "continent": "Africa",
     "firstLetter": "l",
-    "lastLetter": "o"
+    "lastLetter": "o",
+    "firstLetterCount": 9,
+    "lastLetterCount": 12
   },
   {
     "country": "Moldova",
     "continent": "Europe",
     "firstLetter": "m",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 17,
+    "lastLetterCount": 73
   },
   {
     "country": "Mongolia",
     "continent": "Asia",
     "firstLetter": "m",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 17,
+    "lastLetterCount": 73
   },
   {
     "country": "Liberia",
     "continent": "Africa",
     "firstLetter": "l",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 9,
+    "lastLetterCount": 73
   },
   {
     "country": "Monaco",
     "continent": "Europe",
     "firstLetter": "m",
-    "lastLetter": "o"
+    "lastLetter": "o",
+    "firstLetterCount": 17,
+    "lastLetterCount": 12
   },
   {
     "country": "Myanmar",
     "continent": "Asia",
     "firstLetter": "m",
-    "lastLetter": "r"
+    "lastLetter": "r",
+    "firstLetterCount": 17,
+    "lastLetterCount": 7
   },
   {
     "country": "Libya",
     "continent": "Africa",
     "firstLetter": "l",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 9,
+    "lastLetterCount": 73
   },
   {
     "country": "Montenegro",
     "continent": "Europe",
     "firstLetter": "m",
-    "lastLetter": "o"
+    "lastLetter": "o",
+    "firstLetterCount": 17,
+    "lastLetterCount": 12
   },
   {
     "country": "Nepal",
     "continent": "Asia",
     "firstLetter": "n",
-    "lastLetter": "l"
+    "lastLetter": "l",
+    "firstLetterCount": 11,
+    "lastLetterCount": 5
   },
   {
     "country": "Madagascar",
     "continent": "Africa",
     "firstLetter": "m",
-    "lastLetter": "r"
+    "lastLetter": "r",
+    "firstLetterCount": 17,
+    "lastLetterCount": 7
   },
   {
     "country": "Netherlands",
     "continent": "Europe",
     "firstLetter": "n",
-    "lastLetter": "s"
+    "lastLetter": "s",
+    "firstLetterCount": 11,
+    "lastLetterCount": 18
   },
   {
     "country": "North Korea",
     "continent": "Asia",
     "firstLetter": "n",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 11,
+    "lastLetterCount": 73
   },
   {
     "country": "Malawi",
     "continent": "Africa",
     "firstLetter": "m",
-    "lastLetter": "i"
+    "lastLetter": "i",
+    "firstLetterCount": 17,
+    "lastLetterCount": 9
   },
   {
     "country": "North Macedonia",
     "continent": "Europe",
     "firstLetter": "n",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 11,
+    "lastLetterCount": 73
   },
   {
     "country": "Oman",
     "continent": "Asia",
     "firstLetter": "o",
-    "lastLetter": "n"
+    "lastLetter": "n",
+    "firstLetterCount": 1,
+    "lastLetterCount": 25
   },
   {
     "country": "Mali",
     "continent": "Africa",
     "firstLetter": "m",
-    "lastLetter": "i"
+    "lastLetter": "i",
+    "firstLetterCount": 17,
+    "lastLetterCount": 9
   },
   {
     "country": "Norway",
     "continent": "Europe",
     "firstLetter": "n",
-    "lastLetter": "y"
+    "lastLetter": "y",
+    "firstLetterCount": 11,
+    "lastLetterCount": 8
   },
   {
     "country": "Pakistan",
     "continent": "Asia",
     "firstLetter": "p",
-    "lastLetter": "n"
+    "lastLetter": "n",
+    "firstLetterCount": 9,
+    "lastLetterCount": 25
   },
   {
     "country": "Mauritania",
     "continent": "Africa",
     "firstLetter": "m",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 17,
+    "lastLetterCount": 73
   },
   {
     "country": "Poland",
     "continent": "Europe",
     "firstLetter": "p",
-    "lastLetter": "d"
+    "lastLetter": "d",
+    "firstLetterCount": 9,
+    "lastLetterCount": 8
   },
   {
     "country": "Philippines",
     "continent": "Asia",
     "firstLetter": "p",
-    "lastLetter": "s"
+    "lastLetter": "s",
+    "firstLetterCount": 9,
+    "lastLetterCount": 18
   },
   {
     "country": "Mauritius",
     "continent": "Africa",
     "firstLetter": "m",
-    "lastLetter": "s"
+    "lastLetter": "s",
+    "firstLetterCount": 17,
+    "lastLetterCount": 18
   },
   {
     "country": "Portugal",
     "continent": "Europe",
     "firstLetter": "p",
-    "lastLetter": "l"
+    "lastLetter": "l",
+    "firstLetterCount": 9,
+    "lastLetterCount": 5
   },
   {
     "country": "Qatar",
     "continent": "Asia",
     "firstLetter": "q",
-    "lastLetter": "r"
+    "lastLetter": "r",
+    "firstLetterCount": 1,
+    "lastLetterCount": 7
   },
   {
     "country": "Morocco",
     "continent": "Africa",
     "firstLetter": "m",
-    "lastLetter": "o"
+    "lastLetter": "o",
+    "firstLetterCount": 17,
+    "lastLetterCount": 12
   },
   {
     "country": "Romania",
     "continent": "Europe",
     "firstLetter": "r",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 4,
+    "lastLetterCount": 73
   },
   {
     "country": "Saudi Arabia",
     "continent": "Asia",
     "firstLetter": "s",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 26,
+    "lastLetterCount": 73
   },
   {
     "country": "Mozambique",
     "continent": "Africa",
     "firstLetter": "m",
-    "lastLetter": "e"
+    "lastLetter": "e",
+    "firstLetterCount": 17,
+    "lastLetterCount": 12
   },
   {
     "country": "Russia",
     "continent": "Europe",
     "firstLetter": "r",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 4,
+    "lastLetterCount": 73
   },
   {
     "country": "Singapore",
     "continent": "Asia",
     "firstLetter": "s",
-    "lastLetter": "e"
+    "lastLetter": "e",
+    "firstLetterCount": 26,
+    "lastLetterCount": 12
   },
   {
     "country": "Namibia",
     "continent": "Africa",
     "firstLetter": "n",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 11,
+    "lastLetterCount": 73
   },
   {
     "country": "San Marino",
     "continent": "Europe",
     "firstLetter": "s",
-    "lastLetter": "o"
+    "lastLetter": "o",
+    "firstLetterCount": 26,
+    "lastLetterCount": 12
   },
   {
     "country": "South Korea",
     "continent": "Asia",
     "firstLetter": "s",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 26,
+    "lastLetterCount": 73
   },
   {
     "country": "Niger",
     "continent": "Africa",
     "firstLetter": "n",
-    "lastLetter": "r"
+    "lastLetter": "r",
+    "firstLetterCount": 11,
+    "lastLetterCount": 7
   },
   {
     "country": "Serbia",
     "continent": "Europe",
     "firstLetter": "s",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 26,
+    "lastLetterCount": 73
   },
   {
     "country": "Sri Lanka",
     "continent": "Asia",
     "firstLetter": "s",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 26,
+    "lastLetterCount": 73
   },
   {
     "country": "Nigeria",
     "continent": "Africa",
     "firstLetter": "n",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 11,
+    "lastLetterCount": 73
   },
   {
     "country": "Slovakia",
     "continent": "Europe",
     "firstLetter": "s",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 26,
+    "lastLetterCount": 73
   },
   {
     "country": "Syria",
     "continent": "Asia",
     "firstLetter": "s",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 26,
+    "lastLetterCount": 73
   },
   {
     "country": "Republic of the Congo",
     "continent": "Africa",
     "firstLetter": "r",
-    "lastLetter": "o"
+    "lastLetter": "o",
+    "firstLetterCount": 4,
+    "lastLetterCount": 12
   },
   {
     "country": "Slovenia",
     "continent": "Europe",
     "firstLetter": "s",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 26,
+    "lastLetterCount": 73
   },
   {
     "country": "Taiwan",
     "continent": "Asia",
     "firstLetter": "t",
-    "lastLetter": "n"
+    "lastLetter": "n",
+    "firstLetterCount": 11,
+    "lastLetterCount": 25
   },
   {
     "country": "Rwanda",
     "continent": "Africa",
     "firstLetter": "r",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 4,
+    "lastLetterCount": 73
   },
   {
     "country": "Spain",
     "continent": "Europe",
     "firstLetter": "s",
-    "lastLetter": "n"
+    "lastLetter": "n",
+    "firstLetterCount": 26,
+    "lastLetterCount": 25
   },
   {
     "country": "Tajikistan",
     "continent": "Asia",
     "firstLetter": "t",
-    "lastLetter": "n"
+    "lastLetter": "n",
+    "firstLetterCount": 11,
+    "lastLetterCount": 25
   },
   {
     "country": "São Tomé and Príncipe",
     "continent": "Africa",
     "firstLetter": "s",
-    "lastLetter": "e"
+    "lastLetter": "e",
+    "firstLetterCount": 26,
+    "lastLetterCount": 12
   },
   {
     "country": "Sweden",
     "continent": "Europe",
     "firstLetter": "s",
-    "lastLetter": "n"
+    "lastLetter": "n",
+    "firstLetterCount": 26,
+    "lastLetterCount": 25
   },
   {
     "country": "Thailand",
     "continent": "Asia",
     "firstLetter": "t",
-    "lastLetter": "d"
+    "lastLetter": "d",
+    "firstLetterCount": 11,
+    "lastLetterCount": 8
   },
   {
     "country": "Senegal",
     "continent": "Africa",
     "firstLetter": "s",
-    "lastLetter": "l"
+    "lastLetter": "l",
+    "firstLetterCount": 26,
+    "lastLetterCount": 5
   },
   {
     "country": "Switzerland",
     "continent": "Europe",
     "firstLetter": "s",
-    "lastLetter": "d"
+    "lastLetter": "d",
+    "firstLetterCount": 26,
+    "lastLetterCount": 8
   },
   {
     "country": "Turkey",
     "continent": "Asia",
     "firstLetter": "t",
-    "lastLetter": "y"
+    "lastLetter": "y",
+    "firstLetterCount": 11,
+    "lastLetterCount": 8
   },
   {
     "country": "Seychelles",
     "continent": "Africa",
     "firstLetter": "s",
-    "lastLetter": "s"
+    "lastLetter": "s",
+    "firstLetterCount": 26,
+    "lastLetterCount": 18
   },
   {
     "country": "Ukraine",
     "continent": "Europe",
     "firstLetter": "u",
-    "lastLetter": "e"
+    "lastLetter": "e",
+    "firstLetterCount": 7,
+    "lastLetterCount": 12
   },
   {
     "country": "Turkmenistan",
     "continent": "Asia",
     "firstLetter": "t",
-    "lastLetter": "n"
+    "lastLetter": "n",
+    "firstLetterCount": 11,
+    "lastLetterCount": 25
   },
   {
     "country": "Sierra Leone",
     "continent": "Africa",
     "firstLetter": "s",
-    "lastLetter": "e"
+    "lastLetter": "e",
+    "firstLetterCount": 26,
+    "lastLetterCount": 12
   },
   {
     "country": "United Kingdom",
     "continent": "Europe",
     "firstLetter": "u",
-    "lastLetter": "m"
+    "lastLetter": "m",
+    "firstLetterCount": 7,
+    "lastLetterCount": 3
   },
   {
     "country": "United Arab Emirates",
     "continent": "Asia",
     "firstLetter": "u",
-    "lastLetter": "s"
+    "lastLetter": "s",
+    "firstLetterCount": 7,
+    "lastLetterCount": 18
   },
   {
     "country": "Somalia",
     "continent": "Africa",
     "firstLetter": "s",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 26,
+    "lastLetterCount": 73
   },
   {
     "country": "Vatican City",
     "continent": "Europe",
     "firstLetter": "v",
-    "lastLetter": "y"
+    "lastLetter": "y",
+    "firstLetterCount": 4,
+    "lastLetterCount": 8
   },
   {
     "country": "Uzbekistan",
     "continent": "Asia",
     "firstLetter": "u",
-    "lastLetter": "n"
+    "lastLetter": "n",
+    "firstLetterCount": 7,
+    "lastLetterCount": 25
   },
   {
     "country": "South Africa",
     "continent": "Africa",
     "firstLetter": "s",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 26,
+    "lastLetterCount": 73
   },
   {
     "country": "Yemen",
     "continent": "Asia",
     "firstLetter": "y",
-    "lastLetter": "n"
+    "lastLetter": "n",
+    "firstLetterCount": 1,
+    "lastLetterCount": 25
   },
   {
     "country": "South Sudan",
     "continent": "Africa",
     "firstLetter": "s",
-    "lastLetter": "n"
+    "lastLetter": "n",
+    "firstLetterCount": 26,
+    "lastLetterCount": 25
   },
   {
     "country": "Vietnam",
     "continent": "Asia",
     "firstLetter": "v",
-    "lastLetter": "m"
+    "lastLetter": "m",
+    "firstLetterCount": 4,
+    "lastLetterCount": 3
   },
   {
     "country": "Sudan",
     "continent": "Africa",
     "firstLetter": "s",
-    "lastLetter": "n"
+    "lastLetter": "n",
+    "firstLetterCount": 26,
+    "lastLetterCount": 25
   },
   {
     "country": "Tanzania",
     "continent": "Africa",
     "firstLetter": "t",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 11,
+    "lastLetterCount": 73
   },
   {
     "country": "Togo",
     "continent": "Africa",
     "firstLetter": "t",
-    "lastLetter": "o"
+    "lastLetter": "o",
+    "firstLetterCount": 11,
+    "lastLetterCount": 12
   },
   {
     "country": "Tunisia",
     "continent": "Africa",
     "firstLetter": "t",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 11,
+    "lastLetterCount": 73
   },
   {
     "country": "Uganda",
     "continent": "Africa",
     "firstLetter": "u",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 7,
+    "lastLetterCount": 73
   },
   {
     "country": "Zambia",
     "continent": "Africa",
     "firstLetter": "z",
-    "lastLetter": "a"
+    "lastLetter": "a",
+    "firstLetterCount": 2,
+    "lastLetterCount": 73
   },
   {
     "country": "Zimbabwe",
     "continent": "Africa",
     "firstLetter": "z",
-    "lastLetter": "e"
+    "lastLetter": "e",
+    "firstLetterCount": 2,
+    "lastLetterCount": 12
   }
 ]

@@ -71,6 +71,7 @@ function writeToFile(fileName,data,space=2){
     typeof data === 'string' ? data :JSON.stringify(data,null,+space)
   );
 }
+import countBy from 'lodash.countby'
 describe('dataTransformer', function(){
 
   /**
@@ -109,6 +110,21 @@ describe('dataTransformer', function(){
       }
 
     }
+    /* add count of firstLetter and lastLetter */
+
+      const itemCountByKeys = ["firstLetter","lastLetter"];
+      for (let i = 0; i < itemCountByKeys.length; i++) {
+        const itemCountByKey = itemCountByKeys[i];
+        let itemCountBy = countBy(outRows, itemCountByKey);
+        outRows.forEach(val =>{
+          val[itemCountByKey + 'Count'] = itemCountBy[val[itemCountByKey]]
+        })
+        // console.log(itemCountBy);
+      }
+      // console.log(outRows);
+
+
+
     // console.log(outRows);
     writeToFile('mysteryCountryFormat.json', outRows)
     console.log(outRows.length);//missing 10 countries
