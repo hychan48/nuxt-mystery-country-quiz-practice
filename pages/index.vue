@@ -421,6 +421,7 @@ export default {
 
       function gameStatesHandlerAtEnd(){
 
+        //maybe refactor to add color so it's easier to debug the game flow
         that.gameStates.push(that.lastGameState);
         that.lastGameState = {};
 
