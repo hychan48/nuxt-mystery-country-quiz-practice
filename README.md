@@ -4,6 +4,11 @@
 https://www.jetpunk.com/user-quizzes/1260664/find-the-mystery-country-using-color-clues-randomized
 https://www.jetpunk.com/quizzes/how-many-countries-can-you-name
 
+# Largest Country Test
+1. click country, use LandMass to exclude. find one per continent. probably start with the order
+  * check if visible on map
+2. Africa, Asia, Europe, North America, Oceania, South America
+
 # bugged country
 Nigeria -> Niger auto completion. so the last letter is bugged
 

@@ -296,6 +296,25 @@ export default {
     largeCountries(){
       return [
         {
+          //visible country,
+          "country": "Somalia",
+          "continent": "Africa",
+          "firstLetter": "s",
+          "lastLetter": "a",
+          "firstLetterCount": 26,
+          "lastLetterCount": 73
+        },
+        { "country": "Bahrain", "continent": "Asia", "firstLetter": "b", "lastLetter": "n", "firstLetterCount": 17, "lastLetterCount": 25 },
+
+        //really small but visible
+        { "country": "Netherlands", "continent": "Europe", "firstLetter": "n", "lastLetter": "s", "firstLetterCount": 11, "lastLetterCount": 18 },
+        { "country": "Mexico", "continent": "North America", "firstLetter": "m", "lastLetter": "o", "firstLetterCount": 17, "lastLetterCount": 12 },
+
+        { "country": "Tuvalu", "continent": "Oceania", "firstLetter": "t", "lastLetter": "u", "firstLetterCount": 11, "lastLetterCount": 6 },
+        { "country": "Chile", "continent": "South America", "firstLetter": "c", "lastLetter": "e", "firstLetterCount": 15, "lastLetterCount": 12 },
+
+
+        {
           "country": "Samoa",
           "continent": "Oceania",
           "firstLetter": "s",
@@ -303,18 +322,19 @@ export default {
           "firstLetterCount": 26,
           "lastLetterCount": 73
         },
-        {
-          "country": "Canada",
-          "continent": "North America",
-          "firstLetter": "c",
-          "lastLetter": "a"
-        },
-        {
-          "country": "China",
-          "continent": "Asia",
-          "firstLetter": "c",
-          "lastLetter": "a"
-        },
+        //not useful letter
+        // {
+        //   "country": "Canada",
+        //   "continent": "North America",
+        //   "firstLetter": "c",
+        //   "lastLetter": "a"
+        // },
+        // {
+        //   "country": "China",
+        //   "continent": "Asia",
+        //   "firstLetter": "c",
+        //   "lastLetter": "a"
+        // },
         {
           "country": "Brazil",
           "continent": "South America",
