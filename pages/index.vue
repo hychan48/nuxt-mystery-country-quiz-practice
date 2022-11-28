@@ -114,12 +114,27 @@
 
 <!--          game history-->
 <!--          {{gameStates}}-->
+<!--          {{excludedCountriesHistory}}-->
           <v-combobox
             solo hide-details multiple
             readonly
-            label="excludedCountries"
-            :value="excludedCountries"
-          />
+            label="excludedCountriesHistory"
+            :value="excludedCountriesHistory"
+          >
+            <template v-slot:selection="{parent,item,on,attrs}">
+<!--            <template v-slot:item="item">-->
+              <v-chip
+                :color="item.color"
+                :class="item.styleClass"
+
+              >
+<!--                {{ data }}-->
+                {{item.country}}
+              </v-chip>
+            </template>
+
+
+          </v-combobox>
           <!--game states-->
           <v-col cols="12">
             {{ lastGameState }}
@@ -289,6 +304,9 @@ export default {
 
   },
   computed: {
+    excludedCountriesHistory(){
+      return this.gameStates;
+    },
     excludedCountries(){
       return this.gameStates.map( val => val.country)
     },
@@ -430,10 +448,10 @@ export default {
 
       }
 
-      function gameStatesHandlerAtEnd(){
+      function gameStatesHandlerAtEnd(color,styleClass){
 
         //maybe refactor to add color so it's easier to debug the game flow
-        that.gameStates.push(that.lastGameState);
+        that.gameStates.push({...that.lastGameState,color,styleClass});
         that.lastGameState = {};
 
       }
@@ -445,7 +463,7 @@ export default {
           color: "rgb(37,57,93)",
           handler: function () {
 
-            gameStatesHandlerAtEnd()
+            gameStatesHandlerAtEnd("rgb(37,57,93)")
           },
           label: "SKIP",
         },
@@ -459,7 +477,7 @@ export default {
             that.lastLetterFilterExclude.push(that.lastGameState.lastLetter);
             that.lastLetterFilterExclude = uniq(that.lastLetterFilterExclude);
 
-            gameStatesHandlerAtEnd()
+            gameStatesHandlerAtEnd("rgb(0, 255, 0)","black--text")
           },
           label: "FL",
           class:"black--text",
@@ -475,7 +493,8 @@ export default {
 
             that.firstLetterFilterExclude.push(that.lastGameState.firstLetter);
             that.firstLetterFilterExclude = uniq(that.firstLetterFilterExclude);
-            gameStatesHandlerAtEnd()          },
+            gameStatesHandlerAtEnd("rgb(0, 0, 255)")
+          },
           label: "LL",
         },
         //continent
@@ -487,7 +506,8 @@ export default {
             that.firstLetterFilterExclude = uniq(that.firstLetterFilterExclude);
             that.lastLetterFilterExclude.push(that.lastGameState.lastLetter);
             that.lastLetterFilterExclude = uniq(that.lastLetterFilterExclude);
-            gameStatesHandlerAtEnd()          },
+            gameStatesHandlerAtEnd("rgb(255, 0, 0)")
+          },
           label: "CO",
         },
         //landmass (LA)
@@ -495,7 +515,8 @@ export default {
           color: "rgb(255, 255, 0)",
           handler: function () {
             la_lm();
-            gameStatesHandlerAtEnd()           },
+            gameStatesHandlerAtEnd("rgb(255, 255, 0)","black--text")
+          },
           label: "LM",
           class:"black--text",
         },
@@ -507,7 +528,8 @@ export default {
             ll();
             that.continentFilterExclude.push(that.lastGameState.continent);
             that.continentFilterExclude = uniq(that.continentFilterExclude);
-            gameStatesHandlerAtEnd()          },
+            gameStatesHandlerAtEnd("rgb(0, 153, 153)")
+          },
           label: "FL LL",
         },
         //fl + continent
@@ -518,7 +540,7 @@ export default {
             co();
             that.lastLetterFilterExclude.push(that.lastGameState.lastLetter);
             that.lastLetterFilterExclude = uniq(that.lastLetterFilterExclude);
-            gameStatesHandlerAtEnd()          },
+            gameStatesHandlerAtEnd("rgb(0, 0, 0)")          },
           label: "FL CO",
         },
         // fl * landmass
@@ -527,7 +549,7 @@ export default {
           handler: function () {
             fl();
             la_lm();
-            gameStatesHandlerAtEnd()          },
+            gameStatesHandlerAtEnd("rgb(153, 153, 0)")          },
           label: "FL LM",
         },
         //ll and continent
@@ -538,7 +560,7 @@ export default {
             co();
             that.firstLetterFilterExclude.push(that.lastGameState.firstLetter);
             that.firstLetterFilterExclude = uniq(that.firstLetterFilterExclude);
-            gameStatesHandlerAtEnd()
+            gameStatesHandlerAtEnd("rgb(153, 0, 153)");
           },
           label: "LL CO",
         },
@@ -548,7 +570,8 @@ export default {
           handler: function () {
             ll();
             la_lm();
-            gameStatesHandlerAtEnd()
+            gameStatesHandlerAtEnd("rgb(51, 255, 255)","black--text")
+
           },
           label: "LL LM",
           class:"black--text",
@@ -561,7 +584,7 @@ export default {
             fl();
             ll();
             co();
-            gameStatesHandlerAtEnd()
+            gameStatesHandlerAtEnd("rgb(119, 0, 0)")
           },
           label: "FL LL CO",
         },
@@ -572,7 +595,7 @@ export default {
             fl();
             ll();
             la_lm();
-            gameStatesHandlerAtEnd()
+            gameStatesHandlerAtEnd("rgb(0, 119, 0)")
           },
           label: "FL LL LM",
         },
@@ -581,7 +604,8 @@ export default {
           color: "rgb(255, 255, 255)",
           handler: function () {
             none();
-            gameStatesHandlerAtEnd()
+            gameStatesHandlerAtEnd("rgb(255, 255, 255)","black--text")
+
           },
           label: "NONE",
           class:"black--text",
