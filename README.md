@@ -10,6 +10,8 @@ under bosnia maybe... double check
 soo i might be missing a country?
 Herzegovina is in europe right now...
 
+vietnam and yemen?
+
 ## Build Setup
 
 ```bash

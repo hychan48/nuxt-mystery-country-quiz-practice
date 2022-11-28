@@ -648,10 +648,10 @@
     "lastLetter": "a"
   },
   {
-    "country": "Saint Vincent and the",
+    "country": "Saint Vincent and the Grenadines",
     "continent": "North America",
     "firstLetter": "s",
-    "lastLetter": "e"
+    "lastLetter": "s"
   },
   {
     "country": "Latvia",
@@ -670,12 +670,6 @@
     "continent": "Africa",
     "firstLetter": "g",
     "lastLetter": "a"
-  },
-  {
-    "country": "Grenadines",
-    "continent": "North America",
-    "firstLetter": "g",
-    "lastLetter": "s"
   },
   {
     "country": "Liechtenstein",
@@ -1122,10 +1116,22 @@
     "lastLetter": "a"
   },
   {
+    "country": "Yemen",
+    "continent": "Asia",
+    "firstLetter": "y",
+    "lastLetter": "n"
+  },
+  {
     "country": "South Sudan",
     "continent": "Africa",
     "firstLetter": "s",
     "lastLetter": "n"
+  },
+  {
+    "country": "Vietnam",
+    "continent": "Asia",
+    "firstLetter": "v",
+    "lastLetter": "m"
   },
   {
     "country": "Sudan",
