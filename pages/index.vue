@@ -371,11 +371,22 @@ export default {
 
       function fl(fl) {
         that.firstLetterFilter = that.lastGameState.firstLetter;
+        const sortIndex = that.tableSortBy.indexOf("firstLetterCount");
+        if(sortIndex > -1){
+          that.tableSortBy.splice(sortIndex,1)
+          that.tableSortByDesc.splice(sortIndex,1)
+        }
       }
 
       function ll(ll) {
         that.lastLetterFilter = that.lastGameState.lastLetter;
 
+        //should remove the table Filter since it's useless
+        const sortIndex = that.tableSortBy.indexOf("lastLetterCount");
+        if(sortIndex > -1){
+          that.tableSortBy.splice(sortIndex,1)
+          that.tableSortByDesc.splice(sortIndex,1)
+        }
 
 
       }
