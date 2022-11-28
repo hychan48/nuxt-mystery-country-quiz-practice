@@ -537,6 +537,8 @@ export default {
           handler: function () {
             ll();
             co();
+            that.firstLetterFilterExclude.push(that.lastGameState.firstLetter);
+            that.firstLetterFilterExclude = uniq(that.firstLetterFilterExclude);
             gameStatesHandlerAtEnd()
           },
           label: "LL CO",
