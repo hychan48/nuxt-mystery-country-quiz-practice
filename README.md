@@ -10,6 +10,11 @@ https://www.jetpunk.com/quizzes/how-many-countries-can-you-name
   * check if visible on map
 2. Africa, Asia, Europe, North America, Oceania, South America
 
+# potential improvements / optimizations
+* LandMass is currently kinda ignored.
+* None should get rid of continents Africa, Asia, 
+* France is special. Belongs to both sides of the world
+
 # bugged country
 Nigeria -> Niger auto completion. so the last letter is bugged
 
