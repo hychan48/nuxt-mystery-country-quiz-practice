@@ -160,6 +160,10 @@
             :items-per-page="15"
             class="elevation-1"
             :search="tableSearch"
+
+            :sort-by="tableSortBy"
+            :sort-desc="tableSortByDesc"
+            multi-sort
           >
             <template v-slot:item.country="{ item }">
               <v-btn @click="countryBtnEvent(item)">
@@ -201,6 +205,9 @@ export default {
       lastGameState: {},
       gameStates: [],
 
+      tableSortBy:["lastLetterCount","firstLetterCount"],
+      tableSortByDesc:[true,true],
+
     }
   },
   methods: {
@@ -214,6 +221,8 @@ export default {
       this.lastLetterFilterExclude = [];
 
 
+      this.tableSortBy =["lastLetterCount","firstLetterCount"];
+      this.tableSortByDesc=[true,true];
 
       this.lastGameState = {};
       this.gameStates = [];//todo for undo
@@ -361,12 +370,19 @@ export default {
 
 
       }
-
+      /* this one is slighty bugged. let's see if the if statement will save it */
       function la_lm(landmass) {
-        that.firstLetterFilterExclude.push(that.lastGameState.firstLetter);
-        that.firstLetterFilterExclude = uniq(that.firstLetterFilterExclude);
-        that.lastLetterFilterExclude.push(that.lastGameState.lastLetter);
-        that.lastLetterFilterExclude = uniq(that.lastLetterFilterExclude);
+        if(!that.firstLetterFilter){
+          that.firstLetterFilterExclude.push(that.lastGameState.firstLetter);
+          that.firstLetterFilterExclude = uniq(that.firstLetterFilterExclude);
+        }
+
+        if(!that.lastLetterFilter){
+          that.lastLetterFilterExclude.push(that.lastGameState.lastLetter);
+          that.lastLetterFilterExclude = uniq(that.lastLetterFilterExclude);
+        }
+
+
 
         //land mass is hard so ignoring for now? but might basically mean none + same continents or groups
 
@@ -544,8 +560,16 @@ export default {
           value: "firstLetter",
         },
         {
+          text: "FLC",
+          value: "firstLetterCount",
+        },
+        {
           text: "LL",
           value: "lastLetter",
+        },
+        {
+          text: "LLC",
+          value: "lastLetterCount",
         },
 
       ]
